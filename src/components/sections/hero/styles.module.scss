@@ -1,0 +1,140 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: $size-24 $size-12;
+  
+  @include onTablet {
+    padding: $size-24 $size-40;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+    padding: 0 $size-80;
+  }
+}
+
+.wrapper {
+  @include onDesktop {
+    max-width: 520px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  @extend %hero-title-tablet;
+  @include onTablet {
+    font-size: 62px;
+    text-align: start;
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: $size-36 0;
+  text-align: center;
+  @include onTablet {
+    margin: $size-48 0;
+    font-size: 18px;
+    text-align: start;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: $size-18;
+  @include onTablet {
+    flex-direction: row;
+  }
+}
+
+.images {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  @include onTablet {
+    height: 550px;
+  }
+  @include onDesktop {
+    width: 50%;
+    height: 750px;
+  }
+}
+
+.image1 {
+  position: absolute;
+  z-index: 2;
+  top: 150px;
+  left: 0;
+  width: 120px;
+  height: 160px;
+  @include onTablet {
+    top: 100px;
+    left: 0;
+    width: 238px;
+    height: 317px;
+  }
+  @include onDesktop {
+    top: 200px;
+    left: 0;
+  }
+}
+
+.image2 {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  right: 50px;
+  width: 80px;
+  height: 110px;
+  @include onTablet {
+    top: 50px;
+    right: 50px;
+    width: 172px;
+    height: 230px;
+  }
+  @include onDesktop {
+    right: 200px;
+    top: 0;
+  }
+}
+
+.image3 {
+  position: absolute;
+  z-index: 2;
+  bottom: 50px;
+  right: 100px;
+  width: 80px;
+  height: 110px;
+  @include onTablet {
+    bottom: 0;
+    right: 200px;
+    width: 172px;
+    height: 230px;
+  }
+  @include onDesktop {
+    bottom: 100px;
+    right: 100px;
+    width: 172px;
+    height: 230px;
+  }
+}
+
+.bgImage {
+  height: 100%;
+  position: absolute;
+  height: 450px;
+  width: 100%;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  @include onTablet {
+    object-fit: contain;
+  }
+}
