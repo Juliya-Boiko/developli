@@ -1,12 +1,13 @@
-
-import { BtnOutlined } from "@/components/buttons/outlinedBtn"
-import { BtnPrimary } from "@/components/buttons/primaryBtn"
+import { BtnOutlined } from "@/components/buttons/outlined"
+import { BtnPrimary } from "@/components/buttons/primary"
+import { buttonSizes } from "@/constants/buttonSizes"
+import styles from './styles.module.scss'
 
 export const Actions = () => {
   return (
-    <div>
-      <BtnOutlined text="Start hiring"/>
-      <BtnPrimary text="Find a job" />
+    <div className={styles.actionsContainer}>
+      <BtnOutlined text="Start hiring" height={buttonSizes.Small} />
+      <BtnPrimary text="Find a job" height={buttonSizes.Small} />
     </div>
   );
 }

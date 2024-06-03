@@ -25,7 +25,7 @@ export const NavList = () => {
   return (
     <nav className={styles.navList}>
       {navLinks.map((el) => {
-        return <Link key={el.title} href={el.path}>{el.title}</Link>
+        return <Link key={el.title} href={el.path} className={styles.navItem}>{el.title}</Link>
       })}
     </nav>
   );

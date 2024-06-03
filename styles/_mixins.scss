@@ -3,3 +3,16 @@
     @content;
   }
 }
+
+@mixin onTablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+

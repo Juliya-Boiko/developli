@@ -1,19 +1,17 @@
-.navList {
+.loginBtn {
   display: none;
   @extend %navlinkfont;
+  @extend %transition;
+  
   @include onDesktop {
     display: flex;
-    gap: $size-24;
+    align-items: center;
+    gap: $size-8;
     color: $se-black-3;
   }
-}
 
-.navItem {
-  @extend %transition;
-  &:hover {
-    color: $green-2;
-  }
+  &:hover,
   &:active {
-    color: $green-1;
+    color: $se-black-1;
   }
 }

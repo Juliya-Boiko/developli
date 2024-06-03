@@ -1,0 +1,17 @@
+.outlinedBtn {
+  padding: 0 $size-18;
+  border: 1px solid $grey-2;
+  border-radius: $size-12;
+  color: $grey-1;
+  background-color: $white;
+  @extend %buttonfont;
+  @extend %transition;
+  &:hover, &:active {
+    color: $se-black-3;
+    border-color: $se-black-3;
+  }
+  &:disabled {
+    color: $grey-3;
+    border-color: $grey-3;
+  }
+}

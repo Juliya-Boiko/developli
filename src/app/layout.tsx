@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={readex.className}>
         <Header />
-        <main className="grow">
+        <main>
           {children}
         </main>
         <Footer />

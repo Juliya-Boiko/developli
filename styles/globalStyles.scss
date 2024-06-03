@@ -2,10 +2,51 @@
 @import './mixins';
 @import './typografy';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   color: $green-1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient($green-4, $beige) no-repeat fixed;
+  background-color: $beige;
+  background: linear-gradient(0deg, rgba(245, 248, 252, 0.38949671772428884) 45%, rgba(193, 227, 211, 0.4507658643326039) 100%) no-repeat fixed;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  
+  @include onMobile {
+    width: $mobile;
+  }
+
+  @include onTablet {
+    width: $tablet;
+  }
+
+  @include onDesktop {
+    width: $desktop;
+  }
 }

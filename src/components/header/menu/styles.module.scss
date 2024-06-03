@@ -1,0 +1,13 @@
+.menu {
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.btnOpen {
+  display: flex;
+}
+
+.btnClose {
+
+}

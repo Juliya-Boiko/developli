@@ -12,7 +12,8 @@ const nextConfig = {
       @import "${join(__dirname, 'styles', '_variables.scss')}";
       @import "${join(__dirname, 'styles', '_typografy.scss')}";
       @import "${join(__dirname, 'styles', '_mixins.scss')}";
-    `,
+      @import "${join(__dirname, 'styles', '_placeholders.scss')}";
+      `,
     includePaths: [join(__dirname, 'styles')],
   },
   basePath: '/developli',
