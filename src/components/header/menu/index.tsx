@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import svgMenu from '../../../../public/icons/menu.svg'
 import svgClose from '../../../../public/icons/close.svg'
-
 import styles from './styles.module.scss'
 import { useState } from 'react';
 

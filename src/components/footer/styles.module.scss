@@ -1,0 +1,104 @@
+.footer {
+  color: $black-2;
+  background-color: $beige;
+  border-radius: $size-32 $size-32 0 0;
+}
+
+.content {
+  padding: $size-24 $size-12;
+  @include onTablet {
+    padding: $size-24 $size-40;
+  }
+  @include onDesktop {
+    padding: $size-40 $size-80;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 $size-24 0;
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 $size-100 0;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: $size-48;
+  @include onTablet {
+    flex-direction: row;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $size-12;
+}
+
+.title {
+  color: $se-black-1;
+  margin: 0 0 $size-18 0;
+  @extend %footerTitle;
+}
+
+.navLink {
+  @extend %footerLinks;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $size-24;
+  margin: 0 0 $size-40 0;
+  text-align: center;
+  @include onDesktop {
+    max-width: 280px;
+    margin: 0;
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+
+.text {
+  @extend %footerLinks;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $black-2;
+  padding: $size-24 0 0 0;
+  @extend %footerInfoFont;
+  @include onTablet {
+    flex-direction: row;
+  }
+}
+
+.policy {
+  width: 100%;
+  text-align: center;
+  margin: $size-24 0 0 0;
+  @include onTablet {
+    width: max-content;
+    margin: 0;
+    text-align: start;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: $size-8;
+  padding: $size-24 0;
+  @include onTablet {
+    padding: 0;
+  }
+}
