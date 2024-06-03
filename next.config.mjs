@@ -7,6 +7,7 @@ const nextConfig = {
   },
   basePath: '/developli',
   assetPrefix: '/developli/',
+  output: 'export'
 };
 
 export default nextConfig;
