@@ -1,0 +1,11 @@
+@import './variables';
+@import './mixins';
+@import './typografy';
+
+body {
+  color: $green-1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient($green-4, $beige) no-repeat fixed;
+}

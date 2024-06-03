@@ -1,13 +1,24 @@
 /** @type {import('next').NextConfig} */
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const nextConfig = {
   // reactStrictMode: true,
-  images: {
-    loader: 'imgix',
-    path: '',
+  images: { unoptimized: true },
+  sassOptions: {
+    prependData: `
+      @import "${join(__dirname, 'styles', '_variables.scss')}";
+      @import "${join(__dirname, 'styles', '_typografy.scss')}";
+      @import "${join(__dirname, 'styles', '_mixins.scss')}";
+    `,
+    includePaths: [join(__dirname, 'styles')],
   },
   basePath: '/developli',
   assetPrefix: '/developli/',
-  output: 'export'
+  output: 'export',
+  pageExtensions: ['jsx', 'js', 'tsx', 'ts'],
 };
 
 export default nextConfig;
