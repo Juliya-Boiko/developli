@@ -14,7 +14,7 @@ export const Hero = () => {
     <section className="container">
       <div className={styles.content}>
         <div className={styles.wrapper}>
-          <h1 className={styles.title}>Let’s <span className="accent-green">boost up</span> your hiring process</h1>
+          <h1 className="pageTitle">Let’s <span className="accent-green">boost up</span> your hiring process</h1>
           <p className={styles.text}>We are nost efficient and reliable souce of hiring <br/> perocess and two time faster than any other companies</p>
           <div className={styles.actions}>
             <BtnPrimary text="Start hiring" height={buttonSizes.Big} icon />

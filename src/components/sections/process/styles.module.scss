@@ -1,17 +1,102 @@
-.content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: $size-24 $size-12;
+.section {
+  padding: 0 $size-12 $size-36 $size-12;
   
   @include onTablet {
-    padding: $size-24 $size-40;
+    padding: 0 $size-24 $size-48 $size-24;
   }
 
   @include onDesktop {
+    padding: 0 $size-80 $size-120 $size-80;
+  }
+}
+
+.titleWrapper {
+  @include onTablet {
+    margin: 0 auto;
+    width: 620px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $size-16;
+  margin: $size-32 0 0 0;
+  @include onDesktop {
+    margin: $size-48 0 0 0;
     flex-direction: row;
-    padding: 0 $size-80;
+    gap: $size-20;
+  }
+}
+
+.listItem {
+  position: relative;
+  padding: $size-32 $size-32 $size-48 $size-32;
+  background-color: $white;
+  border-radius: $size-32;
+  @extend %processText;
+  box-shadow: $shadow-s;
+  @extend %transition;
+  &:hover {
+    background-color: $se-black-3;
+    color: $secondary-yellow-green;
+  }
+  &:hover .order {
+    background-color: $secondary-yellow-green;
+    border-color: $secondary-yellow-green;
+  }
+  @include onDesktop {
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $size-32 $size-32 $size-60 $size-32;
+  }
+}
+
+.listItem:nth-child(2) {
+  @include onDesktop {
+    top: 40px;
+  }
+}
+
+.listItem:nth-child(3) {
+  @include onDesktop {
+    top: 80px;
+  }
+}
+
+.order {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $se-black-1;
+  border-radius: 50%;
+  margin: 0 0 $size-18 0;
+  color: $se-black-3;
+  @extend %processTitle;
+  @extend %transition;
+  @include onDesktop {
+    width: 58px;
+    height: 58px;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.title {
+  @extend %processTitle;
+  @include onDesktop {
+    font-size: 32px;
+  }
+}
+
+.text {
+  margin: $size-18 0 0 0;
+  @include onDesktop {
+    margin: $size-32 0 0 0;
+    font-size: 16px;
   }
 }
