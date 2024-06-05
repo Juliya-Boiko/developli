@@ -3,6 +3,8 @@ import { Process } from "@/components/sections/process"
 import { processGuid } from "@/constants/processData"
 import { Opportunities } from "@/components/sections/opportunities"
 import { Partners } from "@/components/sections/partners"
+import { Starter } from "@/components/sections/starter"
+import imgStarter from '../../public/images/starter1.png'
 
 export default function Home() {
   return (
@@ -14,6 +16,12 @@ export default function Home() {
       </Process>
       <Opportunities />
       <Partners />
+      <Starter
+        title={<p>Hire your <br /> dream team today</p>}
+        btnText="Post a job"
+        bgColor="#B6DAFF"
+        image={imgStarter}
+      />
     </>
   );
 }
