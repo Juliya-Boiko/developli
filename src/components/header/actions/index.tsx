@@ -6,8 +6,8 @@ import styles from './styles.module.scss'
 export const Actions = () => {
   return (
     <div className={styles.actionsContainer}>
-      <BtnOutlined text="Start hiring" height={buttonSizes.Small} />
-      <BtnPrimary text="Find a job" height={buttonSizes.Small} />
+      <BtnOutlined text="Start hiring" height={buttonSizes.Small} onClick={() => console.log('Headerclick')} />
+      <BtnPrimary text="Find a job" height={buttonSizes.Small} onClick={() => console.log('Headerclick')} />
     </div>
   );
 }
