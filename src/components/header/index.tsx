@@ -10,7 +10,7 @@ export const Header = () => {
     <header className={`container ${styles.header}`}>
       <Logo />
       <NavList />
-      <BtnLogin />
+      <BtnLogin onClick={() => console.log('Btn Login')} />
       <Actions />
       <Menu />
     </header>
