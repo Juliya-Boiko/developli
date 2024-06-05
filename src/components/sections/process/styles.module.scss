@@ -1,10 +1,8 @@
 .section {
   padding: 0 $size-12 $size-36 $size-12;
-  
   @include onTablet {
     padding: 0 $size-24 $size-48 $size-24;
   }
-
   @include onDesktop {
     padding: 0 $size-80 $size-120 $size-80;
   }

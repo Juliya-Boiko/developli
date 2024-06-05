@@ -1,13 +1,13 @@
 "use client"
-import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import ClassNames from 'embla-carousel-class-names'
 import styles from './styles.module.scss'
-import { reviews } from '@/constants/processData'
 import Image from 'next/image'
-import { BtnIcon } from '@/components/buttons/icon'
-import { useCallback } from 'react'
 import Marquee from 'react-fast-marquee'
+import { EmblaOptionsType } from 'embla-carousel'
+import { reviews } from '@/constants/processData'
+import { useCallback } from 'react'
+import { BtnIcon } from '@/components/buttons/icon'
 
 const options: EmblaOptionsType = {}
 export const Partners = () => {
