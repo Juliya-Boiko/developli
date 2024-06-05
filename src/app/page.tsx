@@ -1,3 +1,4 @@
+"use client"
 import { Hero } from "@/components/sections/hero"
 import { Process } from "@/components/sections/process"
 import { processGuid } from "@/constants/processData"
