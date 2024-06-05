@@ -1,3 +1,4 @@
+"use client"
 import { ButtonProps } from "../type"
 import styles from './styles.module.scss'
 import { getBtnStyles } from "@/utils/buttonsStyles"
@@ -6,7 +7,6 @@ import Image from 'next/image'
 
 
 export const BtnPrimary = ({ text, height, icon, onClick }: ButtonProps) => {
-
   return (
     <button
       type="button"

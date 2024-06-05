@@ -1,3 +1,4 @@
+"use client"
 import { BtnOutlined } from "@/components/buttons/outlined"
 import { BtnPrimary } from "@/components/buttons/primary"
 import { buttonSizes } from "@/constants/buttonSizes"

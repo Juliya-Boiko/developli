@@ -1,3 +1,4 @@
+"use client"
 import { BtnPrimary } from "@/components/buttons/primary"
 import { buttonSizes } from "@/constants/buttonSizes"
 import { StarterProps } from "./type"

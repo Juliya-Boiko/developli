@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import bgiSrc from '../../../../public/bgi/hero.svg'
 import image1 from '../../../../public/images/1405.png'

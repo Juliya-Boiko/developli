@@ -1,3 +1,4 @@
+"use client"
 import { ButtonProps } from "../type"
 import styles from './styles.module.scss'
 import svgSrc from '../../../../public/icons/arrow-right-grey.svg'
