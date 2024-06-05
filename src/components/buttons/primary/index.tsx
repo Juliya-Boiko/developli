@@ -5,7 +5,7 @@ import svgSrc from '../../../../public/icons/arrow-right-white.svg'
 import Image from 'next/image'
 
 
-export const BtnPrimary = ({ text, height, icon }: ButtonProps) => {
+export const BtnPrimary = ({ text, height, icon, onClick }: ButtonProps) => {
 
   return (
     <button
@@ -14,6 +14,7 @@ export const BtnPrimary = ({ text, height, icon }: ButtonProps) => {
       style={{
         height: height,
       }}
+      onClick={onClick}
     >
       {text}
       {icon && <Image src={svgSrc} alt="text" width={24} height={24} />}

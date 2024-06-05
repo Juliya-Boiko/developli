@@ -1,0 +1,10 @@
+.iconBtn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;  
+  border: 1px solid $grey-2;
+  border-radius: $size-12;
+}

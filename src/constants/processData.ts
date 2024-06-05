@@ -2,7 +2,13 @@ import svgOp1 from '../../public/icons/opport-1.svg'
 import svgOp2 from '../../public/icons/opport-2.svg'
 import svgOp3 from '../../public/icons/opport-3.svg'
 import svgOp4 from '../../public/icons/opport-4.svg'
-
+import svgAirBnb from '../../public/icons/Airbnb.svg'
+import svgAmazon from '../../public/icons/Amazon.svg'
+import svgGoogle from '../../public/icons/Google.svg'
+import svgInVision from '../../public/icons/InVision.svg'
+import svgStripe from '../../public/icons/Stripe.svg'
+import svgZendesk from '../../public/icons/Zendesk.svg'
+import svgRakuten from '../../public/icons/Rakuten.svg'
 
 export const processGuid = [
   {
@@ -60,4 +66,42 @@ export const processOpportunities = [
     color: '#A3A93B'
   },
 
+]
+
+export const reviews = [
+  {
+    icon: svgAirBnb,
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    author: 'Leila Khoury, CEO'
+  },
+  {
+    icon: svgAmazon,
+    text: 'We are nost efficient and reliable souce of hiring perocess and ',
+    author: 'Leila Khoury, CEO'
+  },
+  {
+    icon: svgGoogle,
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    author: 'Leila Khoury, CEO'
+  },
+  {
+    icon: svgRakuten,
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    author: 'Leila Khoury, CEO'
+  },
+  {
+    icon: svgInVision,
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies. We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    author: 'Leila Khoury, CEO'
+  },
+  {
+    icon: svgStripe,
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    author: 'Leila Khoury, CEO'
+  },
+  {
+    icon: svgZendesk,
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    author: 'Leila Khoury, CEO'
+  },
 ]

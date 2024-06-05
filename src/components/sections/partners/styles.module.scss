@@ -1,0 +1,141 @@
+.section {
+  padding: 0 0 $size-48 0;
+  @include onTablet {
+    padding: 0 0 $size-80 0;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $size-32;
+  margin: 0 auto $size-32 auto;
+  padding: 0 $size-12;
+  width: 100%;
+  @include onMobile {
+    width: $mobile;
+  }
+  @include onTablet {
+    width: $tablet;
+    padding: 0 $size-24;
+  }
+  @include onDesktop {
+    flex-direction: row;
+    width: $desktop;
+    padding: $size-24 $size-80 $size-48 $size-80;
+    margin: 0 auto auto;
+    text-align: start;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  @include onTablet {
+    font-size: 44px;
+  }
+  @include onDesktop {
+    text-align: start;
+    width: 450px;
+  }
+}
+
+.block {
+  font-size: 14px;
+  line-height: 1.6;
+  color: $grey-1;
+  text-align: center;
+
+  @include onDesktop {
+    text-align: start;
+    width: 400px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: $size-36;
+  }
+}
+
+.buttonsWrapper {
+  display: none;
+  @include onDesktop {
+    display: flex;
+    margin-left: auto;
+    gap: $size-12;
+  }
+}
+
+.slider {
+  padding: 0 0 0 $size-12;
+  @include onDesktop {
+    width: $desktop;
+    padding: 0 $size-80;
+    margin: 0 auto;
+  }
+}
+
+.sliderViewport {
+  overflow: hidden;
+}
+
+.sliderContainer {
+  backface-visibility: hidden;
+  display: flex;
+  gap: $size-18;
+  touch-action: pan-y pinch-zoom;
+}
+
+.slide {
+  border: 1px solid $grey-2;
+  border-radius: $size-20;
+  padding: $size-20;
+  min-width: 280px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  @include onDesktop {
+    min-width: 410px;
+    font-size: 18px;
+    padding: $size-40;
+  }
+}
+
+.icon {
+  width: 100px;
+  height: 30px;
+  object-fit: contain;
+  margin: 0 0 $size-36 0;
+  @include onDesktop {
+    width: 130px;
+    height: 42px;
+  }
+}
+
+.info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.author {
+  color: $grey-2;
+  line-height: 1.5;
+  margin: $size-36 0 0 0;
+} 
+
+.logoWall {
+  padding: $size-80 0 0 0;
+}
+
+.marqee {
+  margin: 0 $size-18;
+}

@@ -1,7 +1,8 @@
 import { Hero } from "@/components/sections/hero"
-import { Process } from "@/components/sections/process";
-import { processGuid } from "@/constants/processData";
-import { Opportunities } from "@/components/sections/opportunities";
+import { Process } from "@/components/sections/process"
+import { processGuid } from "@/constants/processData"
+import { Opportunities } from "@/components/sections/opportunities"
+import { Partners } from "@/components/sections/partners"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <p className="sectionSubtitle">Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
       </Process>
       <Opportunities />
+      <Partners />
     </>
   );
 }

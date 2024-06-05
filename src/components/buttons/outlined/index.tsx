@@ -4,7 +4,7 @@ import { getBtnStyles } from "@/utils/buttonsStyles"
 import svgSrc from '../../../../public/icons/arrow-right-grey.svg'
 import Image from 'next/image'
 
-export const BtnOutlined = ({ text, height, icon }: ButtonProps) => {
+export const BtnOutlined = ({ text, height, icon, onClick }: ButtonProps) => {
 
   return (
     <button
@@ -13,6 +13,7 @@ export const BtnOutlined = ({ text, height, icon }: ButtonProps) => {
       style={{
         height: height,
       }}
+      onClick={onClick}
     >
       {text}
       {icon && <Image src={svgSrc} alt="text" width={24} height={24} />}
