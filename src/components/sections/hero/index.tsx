@@ -17,8 +17,8 @@ export const Hero = () => {
           <h1 className="pageTitle">Let’s <span className="accent-green">boost up</span> your hiring process</h1>
           <p className={styles.text}>We are nost efficient and reliable souce of hiring <br/> perocess and two time faster than any other companies</p>
           <div className={styles.actions}>
-            <BtnPrimary text="Start hiring" height={buttonSizes.Big} icon />
-            <BtnOutlined text="Post a job" height={buttonSizes.Big} icon />
+            <BtnPrimary text="Start hiring" height={buttonSizes.Big} icon onClick={() => console.log('Hero')} />
+            <BtnOutlined text="Post a job" height={buttonSizes.Big} icon onClick={() => console.log('Hero')} />
           </div>
         </div>
         <div className={styles.images}>
