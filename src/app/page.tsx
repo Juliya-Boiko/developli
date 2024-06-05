@@ -21,6 +21,7 @@ export default function Home() {
         btnText="Post a job"
         bgColor="#B6DAFF"
         image={imgStarter}
+        onClick={() => console.log('Home starter click')}
       />
     </>
   );
