@@ -4,7 +4,7 @@ import { StarterProps } from "./type"
 import styles from './styles.module.scss'
 import Image from 'next/image'
 
-export const Starter = ({ title, btnText, bgColor, image }: StarterProps) => {
+export const Starter = ({ title, btnText, bgColor, image, onClick }: StarterProps) => {
   return (
     <section className={`container ${styles.section}`}>
       <div className={styles.wrapper} style={{
@@ -12,7 +12,7 @@ export const Starter = ({ title, btnText, bgColor, image }: StarterProps) => {
       }}>
         <div className={styles.block}>
           <h2 className={styles.title}>{title}</h2>
-          <BtnPrimary text={btnText} height={buttonSizes.Big} icon />
+          <BtnPrimary text={btnText} height={buttonSizes.Big} icon onClick={onClick} />
         </div>
         <Image src={image} alt="Image" className={styles.image} />
       </div>
