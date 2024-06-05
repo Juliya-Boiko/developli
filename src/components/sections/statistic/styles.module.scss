@@ -1,0 +1,180 @@
+.section {
+  padding: $size-60 $size-12 $size-48 $size-12;
+  text-align: center;
+  @include onTablet {
+    padding: $size-60 $size-24 ;
+  }
+
+  // @include onDesktop {
+  //   padding: 0 $size-80 $size-120 $size-80;
+  // }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 0 $size-24 0;
+  @include onTablet {
+    font-size: 62px;
+  }
+}
+
+.subTitle {
+  font-size: 14px;
+  line-height: 1.6;
+  color: $grey-1;
+  margin: 0 0 $size-60 0;
+  @include onTablet {
+    font-size: 20px;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $size-20;
+  @include onTablet {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: $size-32 0 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  @include onTablet {
+    font-size: 20px;
+    margin: $size-60 0 0 0;
+  }
+  @include onDesktop {
+    grid-template-columns: 220px 440px 220px 440px;
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.count {
+  font-size: 24px;
+  @include onTablet {
+    font-size: 48px;
+  }
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  img {
+    width: 100%;
+    height: auto;
+  }
+    @include onDesktop {
+      max-height: 225px;
+      grid-area: 1 / 1 / 2 / 2;
+      img {
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+      }
+    }
+}
+
+.div2 {
+  padding: $size-12;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: $green-3;
+  border-radius: $size-8;
+  @include onTablet {
+    border-radius: $size-20;
+    padding: $size-24;
+  }
+    @include onDesktop {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+}
+
+.div3 {
+  grid-area: 1 / 2 / 3 / 4;
+  background-color: $blue-3;
+  border-radius: $size-12;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @include onTablet {
+    border-radius: $size-20;
+  }
+    @include onDesktop {
+      max-height: 520px;
+      grid-area: 1 / 2 / 3 / 3;
+    }
+}
+
+.div4 {
+  max-height: 290px;
+  grid-area: 3 / 1 / 5 / 3;
+  border-radius: $size-12;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+  @include onTablet {
+    max-height: 620px;
+  }
+    @include onDesktop {
+      max-height: 520px;
+      grid-area: 1 / 4 / 3 / 5;
+    }
+}
+
+.div5 {
+  background-color: $secondary-pink;
+  padding: $size-12;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: 3 / 3 / 4 / 4;
+  border-radius: $size-8;
+  @include onTablet {
+    border-radius: $size-20;
+    padding: $size-24;
+  }
+    @include onDesktop {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+}
+
+.div6 {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  grid-area: 4 / 3 / 5 / 4;
+    @include onDesktop {
+      grid-area: 2 / 3 / 3 / 4;
+      max-height: 225px;
+      img {
+height: 100%;
+  width: auto;
+  margin: auto;
+      }
+    }
+}
