@@ -105,3 +105,43 @@ export const reviews = [
     author: 'Leila Khoury, CEO'
   },
 ]
+
+export const technologies = [
+  {
+    color: '#53C58F',
+    name: 'Software Engeneering'
+  },
+  {
+    color: '#1F8FFF',
+    name: 'Product'
+  },
+  {
+    color: '#F59A74',
+    name: 'Marketing'
+  },
+  {
+    color: '#8E66ED',
+    name: 'People, HR, Recruitment'
+  },
+  {
+    color: '#8E66ED',
+    name: 'Sales & Account Management'
+  },
+  {
+    color: '#53C58F',
+    name: 'Design'
+  },
+
+  {
+    color: '#1F8FFF',
+    name: 'Finance, Legal & Compliance'
+  },
+  {
+    color: '#F59A74',
+    name: 'Operations & Strategy'
+  },
+  {
+    color: '#53C58F',
+    name: 'Data'
+  },
+]

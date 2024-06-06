@@ -1,15 +1,13 @@
-"use client"
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import img1 from '../../../../public/images/gallery1.png'
 import img2 from '../../../../public/images/gallery2.png'
 import img3 from '../../../../public/images/gallery3.png'
 import img4 from '../../../../public/images/gallery4.png'
-
 import { StatisticProps } from './type'
-import { BtnOutlined } from "@/components/buttons/outlined"
-import { BtnPrimary } from "@/components/buttons/primary"
-import { buttonSizes } from "@/constants/buttonSizes"
+import { linkSizes } from '@/utils/setLinkStyles'
+import { routesNames } from '@/constants/routesNames'
+import { RouterLink } from '@/components/links/routerLink'
 
 export const Statistic = ({ title, accent, subtitle, showActions }: StatisticProps) => {
   const locations = 28
@@ -21,8 +19,19 @@ export const Statistic = ({ title, accent, subtitle, showActions }: StatisticPro
       <p className={styles.subTitle}>{subtitle}</p>
       {showActions && (
         <div className={styles.buttonsWrapper}>
-          <BtnPrimary text="Find a job" height={buttonSizes.Big} icon onClick={() => console.log('Statistic')} />
-          <BtnOutlined text="Create CV" height={buttonSizes.Big} icon onClick={() => console.log('Statistic')} />
+          <RouterLink
+            title="Find a job"
+            primary
+            icon
+            height={linkSizes.Big}
+            path={routesNames.Index}
+          />
+          <RouterLink
+            title="Create CV"
+            icon
+            height={linkSizes.Big}
+            path={routesNames.Index}
+          />
         </div>
       )}
       

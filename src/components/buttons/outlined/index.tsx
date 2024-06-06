@@ -6,6 +6,7 @@ import { ButtonProps } from "../type"
 import { getBtnStyles } from "@/utils/buttonsStyles"
 
 export const BtnOutlined = ({ text, height, icon, onClick }: ButtonProps) => (
+  
   <button
     type="button"
     className={`${styles.outlinedBtn} ${getBtnStyles(height)}`}
