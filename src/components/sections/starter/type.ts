@@ -5,5 +5,5 @@ export interface StarterProps {
   btnText: string
   bgColor: string
   image: StaticImageData,
-  onClick: () => void
+  navigateTo: string
 }

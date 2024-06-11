@@ -1,17 +1,17 @@
-"use client"
+import styles from './styles.module.scss'
 import { Logo } from "../logo"
 import { NavList } from "./navigation"
 import { Actions } from "./actions"
-import { BtnLogin } from "../buttons/login"
 import { Menu } from "./menu"
-import styles from './styles.module.scss'
+import { AuthLink } from "../links/authLink"
+import { routesNames } from "@/constants/routesNames"
 
 export const Header = () => {
   return (
     <header className={`container ${styles.header}`}>
       <Logo />
       <NavList />
-      <BtnLogin onClick={() => console.log('Btn Login')} />
+      <AuthLink title="Login" path={routesNames.Index} />
       <Actions />
       <Menu />
     </header>

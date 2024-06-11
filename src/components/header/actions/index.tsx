@@ -1,13 +1,21 @@
-"use client"
 import styles from './styles.module.scss'
-import { BtnOutlined } from "@/components/buttons/outlined"
-import { BtnPrimary } from "@/components/buttons/primary"
-import { buttonSizes } from "@/constants/buttonSizes"
+import { RouterLink } from '@/components/links/routerLink'
+import { linkSizes } from '@/utils/setLinkStyles'
+import { routesNames } from '@/constants/routesNames'
 
 export const Actions = () => (
   <div className={styles.actionsContainer}>
-    <BtnOutlined text="Start hiring" height={buttonSizes.Small} onClick={() => console.log('Headerclick')} />
-    <BtnPrimary text="Find a job" height={buttonSizes.Small} onClick={() => console.log('Headerclick')} />
+    <RouterLink
+      title="Find a job"
+      primary
+      height={linkSizes.Small}
+      path={routesNames.Index}
+    />
+    <RouterLink
+      title="Start hiring"
+      height={linkSizes.Small}
+      path={routesNames.Index}
+    />
   </div>
 )
   

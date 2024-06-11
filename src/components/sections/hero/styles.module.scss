@@ -5,13 +5,20 @@
   align-items: center;
   justify-content: space-between;
   padding: $size-24 $size-12;
+  background-image: url('../../../../public/bgi/hero.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+
   @include onTablet {
     padding: $size-24 $size-40;
+    background-position: center right;
   }
   @include onDesktop {
     flex-direction: row;
     padding: 0 $size-80;
   }
+  
 }
 
 .wrapper {
@@ -68,7 +75,7 @@
     height: 317px;
   }
   @include onDesktop {
-    top: 200px;
+    top: 300px;
     left: 0;
   }
 }
@@ -88,7 +95,7 @@
   }
   @include onDesktop {
     right: 200px;
-    top: 0;
+    top: 100px;
   }
 }
 
@@ -110,18 +117,5 @@
     right: 100px;
     width: 172px;
     height: 230px;
-  }
-}
-
-.bgImage {
-  height: 100%;
-  position: absolute;
-  height: 450px;
-  width: 100%;
-  z-index: -1;
-  right: 0;
-  top: 0;
-  @include onTablet {
-    object-fit: contain;
   }
 }

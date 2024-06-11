@@ -1,4 +1,3 @@
-"use client"
 import { Hero } from "@/components/sections/hero"
 import { Process } from "@/components/sections/process"
 import { processGuid } from "@/constants/processData"
@@ -6,6 +5,7 @@ import { Opportunities } from "@/components/sections/opportunities"
 import { Partners } from "@/components/sections/partners"
 import { Starter } from "@/components/sections/starter"
 import imgStarter from '../../../public/images/starter1.png'
+import { routesNames } from "@/constants/routesNames"
 
 export const HomePage = () => (
   <>
@@ -21,7 +21,7 @@ export const HomePage = () => (
       btnText="Post a job"
       bgColor="#B6DAFF"
       image={imgStarter}
-      onClick={() => console.log('Home starter click')}
+      navigateTo={routesNames.Index}
     />
   </>
 )
