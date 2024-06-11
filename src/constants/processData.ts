@@ -106,7 +106,7 @@ export const reviews = [
   },
 ]
 
-export const technologies = [
+export const searchTags = [
   {
     color: '#53C58F',
     name: 'Software Engeneering'
@@ -121,17 +121,13 @@ export const technologies = [
   },
   {
     color: '#8E66ED',
-    name: 'People, HR, Recruitment'
+    name: 'HR, Recruitment'
   },
-  {
-    color: '#8E66ED',
-    name: 'Sales & Account Management'
-  },
+
   {
     color: '#53C58F',
     name: 'Design'
   },
-
   {
     color: '#1F8FFF',
     name: 'Finance, Legal & Compliance'
@@ -143,5 +139,9 @@ export const technologies = [
   {
     color: '#53C58F',
     name: 'Data'
+  },
+  {
+    color: '#8E66ED',
+    name: 'Sales & Account Management'
   },
 ]

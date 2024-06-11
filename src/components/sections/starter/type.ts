@@ -1,9 +1,9 @@
-import { StaticImageData } from "next/image";
-
+import { StaticImageData } from "next/image"
 export interface StarterProps {
-  title: React.ReactNode;
+  title: React.ReactNode
+  subTitle?: React.ReactNode
   btnText: string
   bgColor: string
-  image: StaticImageData,
+  image: StaticImageData
   navigateTo: string
 }

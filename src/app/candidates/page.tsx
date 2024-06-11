@@ -1,5 +1,5 @@
-import { CandidatedPage } from "@/components/pages/candidates";
+import { CandidatesPage } from "@/components/pages/candidates";
 
-const Page = () => (<CandidatedPage />)
+const Page = () => (<CandidatesPage />)
 
 export default Page
