@@ -18,7 +18,7 @@ const nextConfig = {
       `,
     includePaths: [join(__dirname, 'styles')],
   },
-  // basePath: '/',
+  basePath: '/developli',
   // assetPrefix: '/',
   output: 'export',
   pageExtensions: ['jsx', 'js', 'tsx', 'ts'],
