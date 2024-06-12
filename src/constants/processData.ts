@@ -292,3 +292,58 @@ export const policyTerms = [
     ]
   },
 ]
+
+export const processFaq = [
+  {
+    title: 'For employers',
+    value: 'employers',
+    data: [
+      {
+        question: 'How many steps to get a job?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'What do we need to apply for a job?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'Do we get cv from Developli?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'Can we reschedule the interview meeting?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'Can we apply for all jobs?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+    ]
+  },
+  {
+    title: 'For candidates',
+    value: 'candidates',
+    data: [
+      {
+        question: 'Do we get cv from Developli?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'Can we reschedule the interview meeting?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'Can we apply for all jobs?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'How many steps to get a job?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+      {
+        question: 'What do we need to apply for a job?',
+        answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
+      },
+    ]
+  }
+]

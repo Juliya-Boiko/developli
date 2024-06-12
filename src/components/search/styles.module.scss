@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  height: 52px;
+  border-radius: $size-16;
+  overflow: hidden;
+  padding: 0 0 0 $size-40;
+}
+
+.icon {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  z-index: 2;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  &::placeholder {
+    font-size: 12px;
+    color: $grey-1;
+  }
+}

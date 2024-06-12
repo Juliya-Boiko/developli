@@ -1,6 +1,7 @@
 import { routesNames } from "@/constants/routesNames";
 import Link from 'next/link'
 import styles from './styles.module.scss'
+import { title } from "process";
 
 export const NavList = () => {
   const navLinks = [
@@ -20,6 +21,10 @@ export const NavList = () => {
       title: 'Blog',
       path: routesNames.Blog
     },
+    {
+      title: 'FAQ',
+      path: routesNames.Faq
+    }
   ]
 
   return (
