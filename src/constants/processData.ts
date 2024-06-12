@@ -145,3 +145,150 @@ export const searchTags = [
     name: 'Sales & Account Management'
   },
 ]
+
+export const policyTerms = [
+  {
+    title: 'Privacy Policy',
+    text: 'This Website collects some Personal Data from its Users. Users may be subject to different protection standards and broader standards may, therefore, apply to some.  In order to learn more about the protection criteria, Users can refer to the applicability section.',
+    terms: [
+      {
+        title: 'Types of Data collected',
+        text: [
+          'The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data. Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. ',
+          'In addition to the Owner, in some cases, the Data may be accessible to certain types of personsin charge, involved with the operation of this Website (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. '
+        ],
+      },
+      {
+        title: 'The purposes of processing',
+        text: [
+          'The Data concerning the User is collected to allow the Owner to provide its Services, as wellas for the following purposes: Analytics, SPAM protection and Contacting the User.',
+          'Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.'
+        ],
+      },
+      {
+        title: 'Contacting the User',
+        text: [
+          'By registering on the mailing list or for the newsletter, the User’s email address will be added tothe contact list of those who may receive email messages containing information of commercial or promotional nature concerning this Website. Your email address might also be added to this list as a result of signing up to this Website or after making a purchase.',
+        ],
+      },
+      {
+        title: 'Legal basis of processing',
+        text: [
+          'Users have given their consent for one or more specific purposes. Note: Under some legislations, the Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;',
+          'Provision of Data is necessary for the performance of an agreement with the User and/or forany pre-contractual obligations thereof;',
+          'Processing is necessary for compliance with a legal obligation to which the Owner is subject;',
+          'Processing is related to a task that is carried out in the public interest or in the exerciseof official authority vested in the Owner;',
+          'In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.',
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Terms of Service',
+    text: 'This Website collects some Personal Data from its Users. Users may be subject to different protection standards and broader standards may, therefore, apply to some.  In order to learn more about the protection criteria, Users can refer to the applicability section.',
+    terms: [
+      {
+        title: 'Types of Data collected',
+        text: [
+          'The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data. Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. ',
+          'In addition to the Owner, in some cases, the Data may be accessible to certain types of personsin charge, involved with the operation of this Website (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. '
+        ],
+      },
+      {
+        title: 'The purposes of processing',
+        text: [
+          'The Data concerning the User is collected to allow the Owner to provide its Services, as wellas for the following purposes: Analytics, SPAM protection and Contacting the User.',
+          'Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.'
+        ],
+      },
+      {
+        title: 'Contacting the User',
+        text: [
+          'By registering on the mailing list or for the newsletter, the User’s email address will be added tothe contact list of those who may receive email messages containing information of commercial or promotional nature concerning this Website. Your email address might also be added to this list as a result of signing up to this Website or after making a purchase.',
+        ],
+      },
+      {
+        title: 'Legal basis of processing',
+        text: [
+          'Users have given their consent for one or more specific purposes. Note: Under some legislations, the Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;',
+          'Provision of Data is necessary for the performance of an agreement with the User and/or forany pre-contractual obligations thereof;',
+          'Processing is necessary for compliance with a legal obligation to which the Owner is subject;',
+          'Processing is related to a task that is carried out in the public interest or in the exerciseof official authority vested in the Owner;',
+          'In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.',
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Data Protection Law',
+    text: 'This Website collects some Personal Data from its Users. Users may be subject to different protection standards and broader standards may, therefore, apply to some.  In order to learn more about the protection criteria, Users can refer to the applicability section.',
+    terms: [
+      {
+        title: 'Types of Data collected',
+        text: [
+          'The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data. Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. ',
+          'In addition to the Owner, in some cases, the Data may be accessible to certain types of personsin charge, involved with the operation of this Website (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. '
+        ],
+      },
+      {
+        title: 'The purposes of processing',
+        text: [
+          'The Data concerning the User is collected to allow the Owner to provide its Services, as wellas for the following purposes: Analytics, SPAM protection and Contacting the User.',
+          'Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.'
+        ],
+      },
+      {
+        title: 'Contacting the User',
+        text: [
+          'By registering on the mailing list or for the newsletter, the User’s email address will be added tothe contact list of those who may receive email messages containing information of commercial or promotional nature concerning this Website. Your email address might also be added to this list as a result of signing up to this Website or after making a purchase.',
+        ],
+      },
+      {
+        title: 'Legal basis of processing',
+        text: [
+          'Users have given their consent for one or more specific purposes. Note: Under some legislations, the Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;',
+          'Provision of Data is necessary for the performance of an agreement with the User and/or forany pre-contractual obligations thereof;',
+          'Processing is necessary for compliance with a legal obligation to which the Owner is subject;',
+          'Processing is related to a task that is carried out in the public interest or in the exerciseof official authority vested in the Owner;',
+          'In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.',
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Subscription',
+    text: 'This Website collects some Personal Data from its Users. Users may be subject to different protection standards and broader standards may, therefore, apply to some.  In order to learn more about the protection criteria, Users can refer to the applicability section.',
+    terms: [
+      {
+        title: 'Types of Data collected',
+        text: [
+          'The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data. Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. ',
+          'In addition to the Owner, in some cases, the Data may be accessible to certain types of personsin charge, involved with the operation of this Website (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. '
+        ],
+      },
+      {
+        title: 'The purposes of processing',
+        text: [
+          'The Data concerning the User is collected to allow the Owner to provide its Services, as wellas for the following purposes: Analytics, SPAM protection and Contacting the User.',
+          'Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.'
+        ],
+      },
+      {
+        title: 'Contacting the User',
+        text: [
+          'By registering on the mailing list or for the newsletter, the User’s email address will be added tothe contact list of those who may receive email messages containing information of commercial or promotional nature concerning this Website. Your email address might also be added to this list as a result of signing up to this Website or after making a purchase.',
+        ],
+      },
+      {
+        title: 'Legal basis of processing',
+        text: [
+          'Users have given their consent for one or more specific purposes. Note: Under some legislations, the Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;',
+          'Provision of Data is necessary for the performance of an agreement with the User and/or forany pre-contractual obligations thereof;',
+          'Processing is necessary for compliance with a legal obligation to which the Owner is subject;',
+          'Processing is related to a task that is carried out in the public interest or in the exerciseof official authority vested in the Owner;',
+          'In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.',
+        ]
+      }
+    ]
+  },
+]

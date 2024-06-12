@@ -8,7 +8,7 @@ export const routesNames = {
   Careers: '/careers',
   Faq: '/faq',
   Contacts: '/contacts',
-  'PrivacyPolicy': '/privacy-policy',
+  PrivacyPolicy: '/privacy-policy',
   Auth: '/auth',
   Jobs: '/jobs'
 }
