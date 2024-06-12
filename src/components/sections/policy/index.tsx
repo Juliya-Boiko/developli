@@ -1,27 +1,36 @@
 "use client"
 import styles from './styles.module.scss'
 import { policyTerms } from "@/constants/processData"
-import Select, { SingleValue } from 'react-select'
-import { useState } from 'react'
+import { SingleValue, ActionMeta } from 'react-select'
+import { useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
+import { SelectOption } from './type'
+
+const Select = dynamic(() => import('react-select'), { ssr: false })
 
 const options = policyTerms.map((el) => ({ value: el.title, label: el.title }))
 
 export const PrivacyConditions = () => {
-  interface Option {
-  value: string;
-  label: string;
-  }
+
+  const [selectedOption, setSelectedOption] = useState<SingleValue<SelectOption>>(options[0])
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
   
-  // const options = [
-  //   { value: 'chocolate', label: 'Chocolate' },
-  //   { value: 'strawberry', label: 'Strawberry' },
-  //   { value: 'vanilla', label: 'Vanilla' },
-  //   ];
-  const [selectedOption, setSelectedOption] = useState(options[0])
+  const handleChange = (v: any) => {
+    setSelectedOption(v)
+  }
 
-
- const handleChange = (opt: SingleValue<Option>) => {
-    console.log(opt);
+  const renderContent = () => {
+    const selectedItem = policyTerms.find((item) => item.title === selectedOption?.value);
+    return selectedItem ? (
+      <div>
+        <h2>{selectedItem.title}</h2>
+        <p>{selectedItem.text}</p>
+      </div>
+    ) : null;
   };
   
   return (
@@ -29,16 +38,12 @@ export const PrivacyConditions = () => {
       <h1 className={styles.title}>Legal Information</h1>
       <p className={styles.subTitle}>If you have any questions you can report them below with the following information, so that it is easy for us to reply to your message.</p>
       <div>
-        {/* <select name="polisy" id="polisy" className={styles.select}>
-          {policyTerms.map((el, idx) => (
-            <option key={`${el.title}_${idx}`} value={el.title}>{el.title}</option>
-          ))}
-        </select> */}
         <Select
-            defaultValue={selectedOption}
-            onChange={handleChange}
-            options={options}
-          />
+          defaultValue={selectedOption}
+          onChange={handleChange}
+          options={options}
+        />
+        {renderContent()}
       </div>
     </section>
   )
