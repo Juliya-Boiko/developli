@@ -16,3 +16,7 @@
   }
 }
 
+@mixin squareSize($size) {
+  width: $size;
+  height: $size;
+}

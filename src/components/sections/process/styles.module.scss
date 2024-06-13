@@ -65,8 +65,7 @@
 }
 
 .order {
-  width: 40px;
-  height: 40px;
+  @include squareSize(40px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,8 +76,7 @@
   @extend %processTitle;
   @extend %transition;
   @include onDesktop {
-    width: 58px;
-    height: 58px;
+    @include squareSize(58px);
     font-size: 20px;
     margin: 0;
   }

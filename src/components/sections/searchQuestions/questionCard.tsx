@@ -16,7 +16,7 @@ export const QuestionCard = ({ question, answer }: QuestionCardProps) => {
   }
 
   return (
-    <li className={styles.card}>
+    <li className={styles.card} onClick={toggleOpen}>
       <div className={styles.head}>
         <p
           className={styles.cardTitle}
@@ -26,7 +26,7 @@ export const QuestionCard = ({ question, answer }: QuestionCardProps) => {
         >
           {question}
         </p>
-        <button type="button" onClick={toggleOpen}>
+        <button type="button">
           {isOpen ? <Image src={svgMinus} alt='close' width={20} height={20} /> : <Image src={svgPlus} alt='open' width={20} height={20} />}
         </button>
       </div>

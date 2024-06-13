@@ -9,6 +9,9 @@ import svgInVision from '../../public/icons/InVision.svg'
 import svgStripe from '../../public/icons/Stripe.svg'
 import svgZendesk from '../../public/icons/Zendesk.svg'
 import svgRakuten from '../../public/icons/Rakuten.svg'
+import svgHours from '../../public/icons/hours.svg'
+import svgPhone from '../../public/icons/phone.svg'
+import svgChat from '../../public/icons/chat.svg'
 
 export const processGuid = [
   {
@@ -345,5 +348,26 @@ export const processFaq = [
         answer: 'Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo.'
       },
     ]
+  }
+]
+
+export const processSupport = [
+  {
+    icon: svgPhone,
+    linkTitle: '00966 2 6676760',
+    linkType: 'tel:+0096626676760',
+    name: 'Our 24/7 Customer Services',
+  },
+  {
+    icon: svgHours,
+    linkTitle: 'support@developli.com',
+    linkType: 'mailto:support@developli.com',
+    name: 'Alternative way to get anwser faster.'
+  },
+  {
+    icon: svgChat,
+    linkTitle: 'Online-Chat',
+    linkType: 'http://http://google.com',
+    name: 'Our community ready to help you'
   }
 ]

@@ -1,6 +1,5 @@
 .iconBtn {
-  width: 44px;
-  height: 44px;
+  @include squareSize(44px);
   display: flex;
   align-items: center;
   justify-content: center;

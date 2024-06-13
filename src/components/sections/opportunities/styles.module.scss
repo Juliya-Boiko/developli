@@ -62,8 +62,7 @@
 
 .icon {
   @include onDesktop {
-    width: 60px;
-    height: 60px;
+    @include squareSize(60px);
   }
 }
 
