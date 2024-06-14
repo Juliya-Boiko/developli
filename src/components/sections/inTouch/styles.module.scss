@@ -33,3 +33,13 @@
     max-width: 760px;
   }
 }
+
+.map {
+  border-radius: $size-16;
+  overflow: hidden;
+  height: 400px;
+  margin: 0 0 $size-48 0;
+  @include onTablet {
+    height: 520px;
+  }
+}

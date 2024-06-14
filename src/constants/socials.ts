@@ -19,3 +19,5 @@ export const socialsList = [
     icon: svgFacebook
   },
 ]
+
+export const address = 'District, JBRA6525 6525 3926 AR Ruwais, Jeddah 23213, Саудівська Аравія'
