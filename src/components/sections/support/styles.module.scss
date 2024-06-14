@@ -29,8 +29,10 @@
   margin: 0 0 $size-24 0;
 
   @include onTablet {
-    margin: 0 0 $size-36 0;
+    display: inline-block;
+    margin: 0 auto $size-36 auto;
     font-size: 18px;
+    max-width: 760px;
   }
 }
 

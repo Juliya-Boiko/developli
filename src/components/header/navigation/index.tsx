@@ -24,6 +24,10 @@ export const NavList = () => {
     {
       title: 'FAQ',
       path: routesNames.Faq
+    },
+    {
+      title: 'Contacts',
+      path: routesNames.Contacts
     }
   ]
 

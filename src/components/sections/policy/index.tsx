@@ -1,7 +1,7 @@
 "use client"
 import styles from './styles.module.scss'
 import { policyTerms } from "@/constants/processData"
-import { SingleValue, ActionMeta } from 'react-select'
+import { SingleValue } from 'react-select'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { SelectOption } from './type'

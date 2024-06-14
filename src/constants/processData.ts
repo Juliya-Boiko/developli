@@ -371,3 +371,18 @@ export const processSupport = [
     name: 'Our community ready to help you'
   }
 ]
+
+export const companySize = [
+  {
+    value: '0-10',
+    label: 'Small'
+  },
+  {
+    value: '10-100',
+    label: 'Medium'
+  },
+  {
+    value: '100-..',
+    label: 'Big'
+  }
+]
