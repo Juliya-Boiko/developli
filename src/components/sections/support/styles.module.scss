@@ -53,9 +53,9 @@
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexContainer(column) {
+    align-items: center;
+  }
   border: 2px solid $white;
   padding: $size-20;
   border-radius: $size-12;

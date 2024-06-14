@@ -20,3 +20,9 @@
   width: $size;
   height: $size;
 }
+
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  @content;
+}

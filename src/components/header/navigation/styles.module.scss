@@ -1,8 +1,9 @@
 .navList {
   display: none;
-  @extend %navlinkfont;
   @include onDesktop {
-    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    @include flexContainer(row);
     gap: $size-24;
     color: $se-black-3;
   }

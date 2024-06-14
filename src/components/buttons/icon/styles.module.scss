@@ -1,8 +1,9 @@
 .iconBtn {
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: center;
+  }
   @include squareSize(44px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: $white;  
   border: 1px solid $grey-2;
   border-radius: $size-12;

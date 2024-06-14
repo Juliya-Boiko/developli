@@ -1,44 +1,5 @@
 @import './mixins';
 
-%navlinkfont {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-%footerLinks {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-%footerInfoFont {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-%footerTitle {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-%titleCommon {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.3;
-  text-align: center;
-}
-
-%processText {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-%processTitle {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .accent-green {
   color: $green-2;
 }
@@ -49,7 +10,10 @@
 
 .pageTitle {
   text-transform: capitalize;
-  @extend %titleCommon;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
   @include onTablet {
     font-size: 62px;
     text-align: start;
@@ -57,13 +21,11 @@
 }
 
 .sectionTitle {
-  @extend %titleCommon;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
   @include onTablet {
     font-size: 44px;
   }
-}
-
-%sectionSubTitle {
-  font-size: 18px;
-  line-height: 1.6;
 }

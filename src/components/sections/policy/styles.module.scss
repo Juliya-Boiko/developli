@@ -34,7 +34,7 @@
 
 .content {
   @include onDesktop {
-    display: flex;
+    @include flexContainer(row);
     gap: $size-40;
   }
 }
@@ -90,8 +90,7 @@
   display: none;
   @include onDesktop {
     min-width: 220px;
-    display: flex;
-    flex-direction: column;
+    @include flexContainer(column);
     gap: $size-20;
     font-size: 18px;
   }

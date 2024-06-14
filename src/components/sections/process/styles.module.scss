@@ -16,8 +16,7 @@
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+  @include flexContainer(column);
   gap: $size-16;
   margin: $size-32 0 0 0;
   @include onDesktop {
@@ -32,7 +31,8 @@
   padding: $size-32 $size-32 $size-48 $size-32;
   background-color: $white;
   border-radius: $size-32;
-  @extend %processText;
+  font-size: 14px;
+  line-height: 1.5;
   box-shadow: $shadow-s;
   @extend %transition;
   &:hover {
@@ -45,9 +45,9 @@
   }
   @include onDesktop {
     height: 490px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flexContainer(column) {
+      justify-content: space-between;
+    };
     padding: $size-32 $size-32 $size-60 $size-32;
   }
 }
@@ -66,14 +66,17 @@
 
 .order {
   @include squareSize(40px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: center;
+  };
   border: 1px solid $se-black-1;
   border-radius: 50%;
   margin: 0 0 $size-18 0;
   color: $se-black-3;
-  @extend %processTitle;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
   @extend %transition;
   @include onDesktop {
     @include squareSize(58px);
@@ -83,7 +86,9 @@
 }
 
 .title {
-  @extend %processTitle;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
   @include onDesktop {
     font-size: 32px;
   }

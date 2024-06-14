@@ -10,8 +10,7 @@
 
 .wrapper {
   height:500px;
-  display: flex;
-  flex-direction: column;
+  @include flexContainer(column);
   padding: $size-48 $size-32;
   border-radius: $size-20;
   overflow: hidden;

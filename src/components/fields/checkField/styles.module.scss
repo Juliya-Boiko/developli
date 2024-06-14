@@ -1,6 +1,7 @@
 .check {
-  display: flex;
-  align-items: center;
+  @include flexContainer(row) {
+    align-items: center;
+  }
   gap: $size-8;
   font-size: 12px;
   line-height: 1.3;

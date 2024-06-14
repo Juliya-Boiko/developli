@@ -1,13 +1,12 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: space-between;
+  }
   padding: $size-24 $size-12;
-
   @include onTablet {
     padding: $size-24 $size-40;
   }
-
   @include onDesktop {
     padding: $size-24 $size-80;
   }

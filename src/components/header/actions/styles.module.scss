@@ -1,8 +1,9 @@
 .actionsContainer {
   display: none;
   @include onDesktop {
-    display: flex;
-    align-items: center;
+    @include flexContainer(row) {
+      align-items: center;
+    }
     gap: $size-8;
   }
 }

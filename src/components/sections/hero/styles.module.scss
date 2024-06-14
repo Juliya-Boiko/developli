@@ -1,15 +1,14 @@
 .content {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @include flexContainer(column) {
+    align-items: center;
+    justify-content: space-between;
+  }
   padding: $size-24 $size-12;
   background-image: url('../../../../public/bgi/hero.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
-
   @include onTablet {
     padding: $size-24 $size-40;
     background-position: center right;
@@ -18,7 +17,6 @@
     flex-direction: row;
     padding: 0 $size-80;
   }
-  
 }
 
 .wrapper {
@@ -40,8 +38,7 @@
 }
 
 .actions {
-  display: flex;
-  flex-direction: column;
+  @include flexContainer(column);
   gap: $size-18;
   @include onTablet {
     flex-direction: row;

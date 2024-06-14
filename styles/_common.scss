@@ -1,8 +1,22 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  @include onMobile {
+    width: $mobile;
+  }
+  @include onTablet {
+    width: $tablet;
+  }
+  @include onDesktop {
+    width: $desktop;
+  }
+}
+
 .sectionSubtitle {
   display: none;
   color: $grey-1;
-  @extend %sectionSubTitle;
-
+  font-size: 18px;
+  line-height: 1.6;
   @include onTablet {
     display: inline-block;
     margin: $size-48 0 0 0;

@@ -3,9 +3,10 @@
 }
 
 %routerLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: center;
+  }
   gap: $size-8;
   padding: 0 $size-36;
   font-weight: 600;

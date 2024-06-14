@@ -6,8 +6,7 @@
 }
 
 .titleWrapper {
-  display: flex;
-  flex-direction: column;
+  @include flexContainer(column);
   gap: $size-32;
   margin: 0 auto $size-32 auto;
   padding: 0 $size-12;
@@ -54,8 +53,7 @@
     text-align: start;
     width: 400px;
     font-size: 18px;
-    display: flex;
-    flex-direction: column;
+    @include flexContainer(column);
     gap: $size-36;
   }
 }
@@ -63,7 +61,7 @@
 .buttonsWrapper {
   display: none;
   @include onDesktop {
-    display: flex;
+    @include flexContainer(row);
     margin-left: auto;
     gap: $size-12;
   }
@@ -84,7 +82,7 @@
 
 .sliderContainer {
   backface-visibility: hidden;
-  display: flex;
+  @include flexContainer(row);
   gap: $size-18;
   touch-action: pan-y pinch-zoom;
 }
@@ -95,8 +93,7 @@
   padding: $size-20;
   min-width: 280px;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
+  @include flexContainer(column);
   @include onDesktop {
     min-width: 410px;
     font-size: 18px;
@@ -117,9 +114,9 @@
 
 .info {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flexContainer(column) {
+    justify-content: space-between;
+  }
 }
 
 .text {
