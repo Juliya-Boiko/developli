@@ -43,6 +43,10 @@
   color: $green-2;
 }
 
+.accent-red {
+  color: $red-1
+}
+
 .pageTitle {
   text-transform: capitalize;
   @extend %titleCommon;

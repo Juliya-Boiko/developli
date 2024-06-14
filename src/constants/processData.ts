@@ -112,40 +112,53 @@ export const reviews = [
 export const searchTags = [
   {
     color: '#53C58F',
-    name: 'Software Engeneering'
+    name: 'Software Engeneering',
+    value: 'software'
   },
   {
     color: '#1F8FFF',
-    name: 'Product'
+    name: 'Product',
+    value: 'product'
+
   },
   {
     color: '#F59A74',
-    name: 'Marketing'
+    name: 'Marketing',
+    value: 'marketing'
+
   },
   {
     color: '#8E66ED',
-    name: 'HR, Recruitment'
+    name: 'HR, Recruitment',
+    value: 'recruitment'
   },
 
   {
     color: '#53C58F',
-    name: 'Design'
+    name: 'Design',
+    value: 'design'
+
   },
   {
     color: '#1F8FFF',
-    name: 'Finance, Legal & Compliance'
+    name: 'Finance, Legal & Compliance',
+    value: 'finance'
+
   },
   {
     color: '#F59A74',
-    name: 'Operations & Strategy'
+    name: 'Operations & Strategy',
+    value: 'operations'
   },
   {
     color: '#53C58F',
-    name: 'Data'
+    name: 'Data',
+    value: 'data'
   },
   {
     color: '#8E66ED',
-    name: 'Sales & Account Management'
+    name: 'Sales & Account Management',
+    value: 'sales'
   },
 ]
 
@@ -375,14 +388,14 @@ export const processSupport = [
 export const companySize = [
   {
     value: '0-10',
-    label: 'Small'
+    label: 'Small (0-10)'
   },
   {
     value: '10-100',
-    label: 'Medium'
+    label: 'Medium (10-100)'
   },
   {
     value: '100-..',
-    label: 'Big'
+    label: 'Big (100-...)'
   }
 ]

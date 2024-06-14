@@ -1,13 +1,13 @@
 import styles from './styles.module.scss'
 import commonStyles from '../styles.module.scss'
-import { TextFieldProps } from "./type"
+import { AreaFieldProps } from "./type"
 import { FieldValues } from 'react-hook-form'
 
-export const TextField = <T extends FieldValues>({ label, errors, required, register, type, name, placeholder }: TextFieldProps<T>) => (
+export const AreaField = <T extends FieldValues>({ label, errors, required, register, name, placeholder }: AreaFieldProps<T>) => (
   <label htmlFor={name} className={commonStyles.label}>
     <p>{label} {required && <span className='accent-red'>*</span>}</p>
     <div>
-      <input type={type} placeholder={placeholder} {...register(name)} className={styles.input} />
+      <textarea placeholder={placeholder} {...register(name)} className={styles.textarea} />
       <span className={`accent-red ${commonStyles.errorMessage}`}>{errors ? errors.message : null}</span>
     </div>
   </label>

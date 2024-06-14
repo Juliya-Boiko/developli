@@ -4,8 +4,9 @@ export type SelectOption = {
 }
 
 export type SelectFieldProps = {
+  isMulti: boolean
   label?: string
-  value: string | undefined
+  value: any
   options: SelectOption[]
   onChange: (v: string) => void
 }

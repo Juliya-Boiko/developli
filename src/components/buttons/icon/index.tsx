@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import styles from './styles.module.scss'
 import svgSrc from '../../../../public/icons/arrow-right-grey.svg'
-import { ButtonProps } from "../type"
+import { ButtonIconProps } from "../type"
 
-export const BtnIcon = ({ reversed, onClick }: ButtonProps) => (
+export const BtnIcon = ({ reversed, onClick }: ButtonIconProps) => (
   <button
     type="button"
     className={styles.iconBtn} 

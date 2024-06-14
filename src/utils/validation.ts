@@ -5,9 +5,10 @@ export const contactSchema = yup.object({
   email: yup.string().trim().email('Invalid email format').required('Email is required'),
   companyName: yup.string().trim(),
   companySize: yup.string(),
+  topics: yup.array().of(yup.string()),
   agreement: yup.boolean()
-    .oneOf([true], "You must accept the terms and conditions")
-
+    .oneOf([true], "You must accept the terms and conditions"),
+  message: yup.string().trim().required('Message is required')
 }).required();
 
 export type ContactFormData = yup.InferType<typeof contactSchema>

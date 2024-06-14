@@ -4,8 +4,12 @@ import { useForm, Controller } from "react-hook-form"
 import { TextField } from '../textField'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { contactSchema, ContactFormData } from '@/utils/validation'
-import { companySize } from '@/constants/processData'
+import { companySize, searchTags } from '@/constants/processData'
 import { SelectField } from '../selectField'
+import { AreaField } from '../areaField'
+import { CheckField } from '../checkField'
+import { BtnPrimary } from '@/components/buttons/primary'
+import { btnSizes } from '@/utils/setBtnStyles'
 
 export const ContactForm = () => {
   const { register, control, getFieldState, handleSubmit, formState: { errors } } = useForm<ContactFormData>({
@@ -13,18 +17,20 @@ export const ContactForm = () => {
     resolver: yupResolver(contactSchema)
   })
 
+  const topics = searchTags.map((el) => ({ value: el.value, label: el.name }))
+
   const onSubmit = (data: ContactFormData) => console.log(data);
   
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       
-      <div>
+      <div className={styles.wrapper}>
         <TextField 
           type='text' 
           label='Your Name' 
           required 
           name='name' 
-          placeholder='name' 
+          placeholder='Enter your name' 
           register={register} 
           errors={errors.name}
         />
@@ -33,7 +39,7 @@ export const ContactForm = () => {
           label='Your Name' 
           required 
           name='email' 
-          placeholder='email' 
+          placeholder='Enter your email' 
           register={register} 
           errors={errors.email}
         />
@@ -52,6 +58,7 @@ export const ContactForm = () => {
           render={({ field }) => (
             <SelectField
               {...field}
+              isMulti={false}
               label='Company Size'
               value={field.value}
               options={companySize}
@@ -59,15 +66,53 @@ export const ContactForm = () => {
             />
           )}
         />
+
       </div>
 
-      <label>
-        <p>agreement</p>
-        <input type="checkbox" {...register("agreement")} />
-        {errors.agreement && <span>{errors.agreement.message}</span>}
-      </label>
+      <div className={styles.topics}>
+            <Controller
+          name='topics'
+          control={control}
+          render={({ field }) => (
+            <SelectField
+              {...field}
+              isMulti={true}
+              label='How our team can help you?'
+              value={field.value}
+              options={topics}
+              onChange={(v) => field.onChange(v)}
+            />
+          )}
+      />
+      </div>
       
-      <button type="submit">Check</button>
+      
+      <AreaField
+          label='Your message'
+          required
+          name='message'
+          placeholder='Type anything' 
+          register={register} 
+          errors={errors.message} />
+
+      <div className={styles.actions}>
+        <Controller
+          name='agreement'
+          control={control}
+          render={({ field }) => (
+            <CheckField
+              {...field}
+              value={field.value}
+              label='I agree to  Terms of Service and Privacy Policy.'
+              register={register}
+              errors={errors.agreement}
+              onChange={(v) => field.onChange(v)}
+            />
+          )}
+      />
+        
+        <BtnPrimary title='Contact us' type='submit' accent height={btnSizes.Big} />
+      </div>
     </form>
   )
 }
