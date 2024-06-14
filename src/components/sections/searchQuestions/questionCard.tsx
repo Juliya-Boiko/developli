@@ -6,8 +6,6 @@ import svgMinus from '../../../../public/icons/minus.svg'
 import Image from 'next/image'
 import { useState } from "react"
 
-
-
 export const QuestionCard = ({ question, answer }: QuestionCardProps) => {
   const [isOpen, setIsOpen] = useState(false)
 

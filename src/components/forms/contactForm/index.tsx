@@ -1,13 +1,13 @@
 "use client"
 import styles from './styles.module.scss'
 import { useForm, Controller } from "react-hook-form"
-import { TextField } from '../textField'
+import { TextField } from '../../fields/textField'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { contactSchema, ContactFormData } from '@/utils/validation'
 import { companySize, searchTags } from '@/constants/processData'
-import { SelectField } from '../selectField'
-import { AreaField } from '../areaField'
-import { CheckField } from '../checkField'
+import { SelectField } from '../../fields/selectField'
+import { AreaField } from '../../fields/areaField'
+import { CheckField } from '../../fields/checkField'
 import { BtnPrimary } from '@/components/buttons/primary'
 import { btnSizes } from '@/utils/setBtnStyles'
 
@@ -23,7 +23,6 @@ export const ContactForm = () => {
   
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-      
       <div className={styles.wrapper}>
         <TextField 
           type='text' 
@@ -32,26 +31,22 @@ export const ContactForm = () => {
           name='name' 
           placeholder='Enter your name' 
           register={register} 
-          errors={errors.name}
-        />
+          errors={errors.name} />
         <TextField 
           type='email' 
-          label='Your Name' 
+          label='Email' 
           required 
           name='email' 
           placeholder='Enter your email' 
           register={register} 
-          errors={errors.email}
-        />
+          errors={errors.email} />
         <TextField 
           type='text' 
           label='Company Name' 
           name='companyName' 
           placeholder='Enter your company name' 
           register={register} 
-          errors={errors.companyName}
-        />
-
+          errors={errors.companyName} />
         <Controller
           name='companySize'
           control={control}
@@ -62,15 +57,11 @@ export const ContactForm = () => {
               label='Company Size'
               value={field.value}
               options={companySize}
-              onChange={(v) => field.onChange(v)}
-            />
-          )}
-        />
-
+              onChange={(v) => field.onChange(v)} />
+        )} />
       </div>
-
       <div className={styles.topics}>
-            <Controller
+        <Controller
           name='topics'
           control={control}
           render={({ field }) => (
@@ -80,21 +71,16 @@ export const ContactForm = () => {
               label='How our team can help you?'
               value={field.value}
               options={topics}
-              onChange={(v) => field.onChange(v)}
-            />
-          )}
-      />
+              onChange={(v) => field.onChange(v)} />
+        )} />
       </div>
-      
-      
       <AreaField
-          label='Your message'
-          required
-          name='message'
-          placeholder='Type anything' 
-          register={register} 
-          errors={errors.message} />
-
+        label='Your message'
+        required
+        name='message'
+        placeholder='Type anything' 
+        register={register} 
+        errors={errors.message} />
       <div className={styles.actions}>
         <Controller
           name='agreement'
@@ -106,11 +92,8 @@ export const ContactForm = () => {
               label='I agree to  Terms of Service and Privacy Policy.'
               register={register}
               errors={errors.agreement}
-              onChange={(v) => field.onChange(v)}
-            />
-          )}
-      />
-        
+              onChange={(v) => field.onChange(v)} />
+        )} />
         <BtnPrimary title='Contact us' type='submit' accent height={btnSizes.Big} />
       </div>
     </form>

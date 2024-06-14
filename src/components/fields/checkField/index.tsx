@@ -4,7 +4,7 @@ import { FieldValues } from 'react-hook-form'
 import { forwardRef } from 'react'
 
 const CheckField = forwardRef<HTMLInputElement, CheckFieldProps<FieldValues>>(({ label, name, value, errors, register, onChange }, ref) => (
-  <label className={`${styles.check} ${errors ? 'accent-red' : ''}`}>
+  <label className={`${styles.check} ${errors?.message ? 'accent-red' : ''}`}>
     <input
       type="checkbox"
       {...register(name)}

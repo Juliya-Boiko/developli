@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import { processFaq } from '@/constants/processData'
 import { useState } from 'react'
 import { Search } from "@/components/search"
-import { QuestionCard } from './QuestionCard'
+import { QuestionCard } from './questionCard'
 
 const tabs = processFaq.map((el) => ({ title: el.title, value: el.value }))
 

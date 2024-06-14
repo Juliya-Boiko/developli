@@ -1,7 +1,7 @@
 "use client"
 import dynamic from 'next/dynamic'
 import styles from './styles.module.scss'
-import commonStyles from '../styles.module.scss'
+import commonStyles from '../commonStyles.module.scss'
 import { SelectFieldProps } from './type'
 import { forwardRef } from 'react'
 

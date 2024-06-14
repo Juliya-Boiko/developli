@@ -4,6 +4,10 @@
   gap: $size-8;
   font-size: 12px;
   line-height: 1.3;
+  @include onDesktop {
+    gap: $size-16;
+    font-size: 16px;
+  }
 }
 
 .customCheck {
@@ -13,6 +17,10 @@
   border-radius: 6px;
   overflow: hidden;
   border: 1.5px solid;
+  @include onDesktop {
+    min-width: 24px;
+    height: 24px;
+  }
 }
 
 .checkedCheck {

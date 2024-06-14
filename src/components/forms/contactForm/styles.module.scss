@@ -2,6 +2,13 @@
   padding: $size-16;
   border-radius: $size-16;
   background-color: $white;
+  @include onTablet {
+    padding: $size-32;
+  }
+  @include onDesktop {
+    width: 946px;
+    margin: 0 auto;
+  }
 }
 
 .wrapper {
@@ -9,6 +16,13 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 12px;
+  @include onDesktop {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: $size-20;
+    grid-row-gap: $size-20;
+    margin: 0 0 $size-12 0;
+  }
 }
 
 .topics {
@@ -16,7 +30,13 @@
 }
 
 .actions {
-  display: flex;
-  flex-direction: column;
-  gap: $size-32;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: $size-32;
+  @include onTablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: $size-60;
+  }
 }
