@@ -13,3 +13,16 @@ export interface JobSearchProps<T extends FieldValues = FieldValues> {
   control: Control<FiltersFormData>
   onClick: () => void
 }
+
+
+type SelectOption = {
+  value: string;
+  label: string;
+}
+
+export type SelectFieldProps = {
+  label?: string
+  value: any
+  options: SelectOption[]
+  onChange: (v: string) => void
+}

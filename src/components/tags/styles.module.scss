@@ -1,0 +1,27 @@
+.tagsList {
+  @include flexContainer(row) {
+    flex-wrap: wrap;
+    gap: $size-12;
+  }
+}
+
+.tag {
+  padding: $size-8 $size-12 $size-8 4px;
+  border-radius: $size-12;
+  border: 1px solid $blue-2;
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  @include fontType(14px, 1.6) {
+    color: $blue-2;
+  }
+}
+
+.btnDelete {
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: center;
+  }
+}

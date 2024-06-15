@@ -9,11 +9,22 @@ import { Recomendation } from '@/components/recomendation'
 import { Tags } from '@/components/tags'
 
 export const Filters = () => {
-  const { register, control } = useForm<FiltersFormData>({
+  const { register, control, setValue } = useForm<FiltersFormData>({
     resolver: yupResolver(filtersSchema)
   })
 
   const formValues = useWatch({ control });
+
+  const handleDelete = (v: string | undefined) => {
+    if (!v) return
+    const entry = Object
+      .entries(formValues)
+      .filter((el) => Array.isArray(el[1]))
+      .find((el) => el[1].includes(v))
+    if (!entry || !entry[0] || !Array.isArray(entry[1])) return
+    const updated = entry[1].filter((el) => el !== v)
+    setValue(entry[0], updated)
+  }
 
   return (
     <section className={`container ${styles.section}`}>
@@ -28,9 +39,9 @@ export const Filters = () => {
           <Recomendation />
 
           <div className='mobileHidden'>
-            <Tags />
+            <Tags data={formValues} onClick={handleDelete} />
           </div>
-          
+
           <div>list</div>
         </div>
       </div>

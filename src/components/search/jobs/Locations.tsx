@@ -2,18 +2,7 @@
 import styles from '../styles.module.scss'
 import dynamic from 'next/dynamic'
 import { forwardRef } from 'react'
-
-type SelectOption = {
-  value: string;
-  label: string;
-}
-
-type SelectFieldProps = {
-  label?: string
-  value: any
-  options: SelectOption[]
-  onChange: (v: string) => void
-}
+import { SelectFieldProps } from '../type'
 
 const Select = dynamic(() => import('react-select'), { ssr: false })
 

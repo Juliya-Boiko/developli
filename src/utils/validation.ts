@@ -15,15 +15,14 @@ export type ContactFormData = yup.InferType<typeof contactSchema>
 
 export const filtersSchema = yup.object({
   filter: yup.string().trim(),
+  location: yup.string(),
+  sort: yup.string(),
+
   experience: yup.array().of(yup.string()),
   category: yup.array().of(yup.string()),
   employmentType: yup.array().of(yup.string()),
   salary: yup.array().of(yup.string()),
   status: yup.array().of(yup.string()),
-  location: yup.string(),
-  // location: yup.lazy((value: any) => {
-  //   return typeof value === 'string' ? yup.string().required() : yup.array().of(yup.string())
-  // }),
 }).required();
 
 export type FiltersFormData = yup.InferType<typeof filtersSchema>

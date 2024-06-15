@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 import { FilterTab } from './FiltersTab'
-import { experienceFilters, categoryTags, typeFilters, salaryRange, jobStatus, jobLocations } from "@/constants/processData"
+import { experienceFilters, categoryTags, typeFilters, salaryRange, jobStatus } from "@/constants/processData"
 import { FiltersFormProps } from './type'
 
 export const FiltersForm = ({ register, control }: FiltersFormProps) => {
