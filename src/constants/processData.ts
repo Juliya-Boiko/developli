@@ -489,7 +489,7 @@ export const jobStatus = {
   ]
 }
 
-export const locations = {
+export const jobLocations = {
   title: 'Location',
   options: [
     {
@@ -514,3 +514,14 @@ export const locations = {
     },
   ]
 }
+
+export const sort = [
+  {
+    label: 'Most relevant',
+    value: 'relevant'
+  },
+  {
+    label: 'Latest',
+    value: 'Latest'
+  },
+]

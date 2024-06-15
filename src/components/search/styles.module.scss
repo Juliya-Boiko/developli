@@ -12,7 +12,7 @@
 .icon {
   position: absolute;
   top: 16px;
-  left: 12px;
+  left: 6px;
   z-index: 2;
 }
 
@@ -21,9 +21,43 @@
   border: none;
   outline: none;
   background-color: transparent;
+  @include fontType(14px, 1);
   &::placeholder {
     @include fontType(12px, 1) {
       color: $grey-1;
     }
   }
+}
+
+.jobsWrapper {
+  background-color: $white;
+  padding: $size-8 $size-16 $size-16 $size-16;
+  border-radius: $size-12;
+  margin: 0 0 $size-24 0;
+  @include onDesktop {
+    padding: $size-8 $size-16;
+    display: grid;
+    grid-template-columns: 3fr repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    margin: 0 0 $size-36 0;
+  }
+}
+
+.selectWrapper {
+  @include flexContainer(row) {
+    align-items: center;
+  }
+  padding: 0 0 0 6px;
+  border-top: 1px solid $light-grey-1;
+  @include onDesktop {
+    border-top: none;
+    border-left: 1px solid $light-grey-1;
+  }
+}
+
+.select {
+  width: 100%;
 }

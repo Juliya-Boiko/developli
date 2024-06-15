@@ -16,4 +16,9 @@ export type FilterTabProps<T extends FieldValues> = {
   name: any
   register: UseFormRegister<FiltersFormData>
   control: Control<FiltersFormData>
-};
+}
+
+export interface FiltersFormProps {
+  register: UseFormRegister<FiltersFormData>
+  control: Control<FiltersFormData>
+}

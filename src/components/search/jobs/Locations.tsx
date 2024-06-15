@@ -1,32 +1,35 @@
 "use client"
+import styles from '../styles.module.scss'
 import dynamic from 'next/dynamic'
-import styles from './styles.module.scss'
-import commonStyles from '../commonStyles.module.scss'
-import { SelectFieldProps } from './type'
 import { forwardRef } from 'react'
+
+type SelectOption = {
+  value: string;
+  label: string;
+}
+
+type SelectFieldProps = {
+  label?: string
+  value: any
+  options: SelectOption[]
+  onChange: (v: string) => void
+}
 
 const Select = dynamic(() => import('react-select'), { ssr: false })
 
-const SelectField = forwardRef<HTMLDivElement, SelectFieldProps>(
-  ({ options, value, label, onChange, isMulti, ...rest }, ref) => {
+const LocationField = forwardRef<HTMLDivElement, SelectFieldProps>(
+  ({ options, value, label, onChange, ...rest }, ref) => {
 
     const selected = options.find((el) => el.value === value)
 
     const handleChange = (data: any) => {
-      if (isMulti) {
-        const values = data.map((el: any) => el.value)
-        onChange(values)
-      } else {
-        onChange(data.value)
-      }
+      onChange(data.value)
     }
 
     return (
       <div ref={ref} className={styles.select}>
-        {label && <p className={commonStyles.label}>{label}</p>}
         <Select
           defaultValue={selected}
-          isMulti={isMulti}
           options={options}
           onChange={handleChange}
           placeholder=' '
@@ -36,9 +39,8 @@ const SelectField = forwardRef<HTMLDivElement, SelectFieldProps>(
               padding: '8px',
               fontSize: '14px',
               border: 0,
-              borderRadius: '16px',
               boxShadow: 'none',
-              backgroundColor: '#F6F8F9'
+              backgroundColor: '#fff'
             }),
             option: (styles, { isSelected }) => ({
               ...styles,
@@ -52,6 +54,6 @@ const SelectField = forwardRef<HTMLDivElement, SelectFieldProps>(
   }
 );
 
-SelectField.displayName = 'SelectField';
+LocationField.displayName = 'LocationField';
 
-export { SelectField };
+export { LocationField };

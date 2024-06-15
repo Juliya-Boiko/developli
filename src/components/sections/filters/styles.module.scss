@@ -1,0 +1,24 @@
+.section {
+  padding: 0 $size-12 $size-24 $size-12;
+  @include onTablet {
+    padding: $size-60 $size-24 ;
+  }
+  @include onDesktop {
+    padding: 0 $size-80 $size-120 $size-80;
+  }
+}
+
+.content {
+  @include onDesktop {
+    @include flexContainer(row) {
+      gap: $size-24;
+    }
+  }
+}
+
+.listWrapper {
+  width: 100%;
+  @include flexContainer(column) {
+    gap: $size-24;
+  }
+}

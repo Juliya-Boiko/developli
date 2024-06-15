@@ -27,3 +27,10 @@
 .hidden {
   display: none;
 }
+
+.mobileHidden {
+  display: none;
+  @include onDesktop {
+    display: block;
+  }
+}

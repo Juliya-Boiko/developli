@@ -1,8 +1,8 @@
 "use client"
-import styles from './styles.module.scss'
+import styles from '../styles.module.scss'
 import Image from 'next/image'
-import svgSearch from '../../../public/icons/search-normal.svg'
-import { SearchProps } from './type'
+import svgSearch from '../../../../public/icons/search-normal.svg'
+import { SearchProps } from '../type'
 
 export const Search = ({ placeholder, onChange }: SearchProps) => {
   return (
@@ -16,7 +16,6 @@ export const Search = ({ placeholder, onChange }: SearchProps) => {
         className={styles.input}
         onChange={(e) => onChange(e.target.value)}
       />
-      {/* <button type="button" >Search</button> */}
     </div>
   )
 }

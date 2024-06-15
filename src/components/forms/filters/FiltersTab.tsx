@@ -24,7 +24,7 @@ const FilterTab = forwardRef<HTMLInputElement, FilterTabProps<FieldValues>>(({ d
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div ref={ref} className={styles.wrapper}>
       <button type="button" className={styles.btnExpand} onClick={handleOpen}>
         {data.title}
         <Image src={svgSrc} alt="arrow" width={18} height={18} className={`${styles.icon} ${open ? styles.iconReversed : ''}`} />
@@ -37,7 +37,8 @@ const FilterTab = forwardRef<HTMLInputElement, FilterTabProps<FieldValues>>(({ d
               <input
                 id={el.value} 
                 type="checkbox"
-                value={el.value} {...register(name)}
+                value={el.value} 
+                {...register(name)}
                 className='hidden'
               />
               <span className={`${styles.customCheck} ${getStyles(el.value)}`}></span>
