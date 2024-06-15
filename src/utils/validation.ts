@@ -12,3 +12,14 @@ export const contactSchema = yup.object({
 }).required();
 
 export type ContactFormData = yup.InferType<typeof contactSchema>
+
+export const filtersSchema = yup.object({
+  experience: yup.array().of(yup.string()),
+  category: yup.array().of(yup.string()),
+  employmentType: yup.array().of(yup.string()),
+  salary: yup.array().of(yup.string()),
+  status: yup.array().of(yup.string()),
+  locations: yup.array().of(yup.string()),
+}).required();
+
+export type FiltersFormData = yup.InferType<typeof filtersSchema>

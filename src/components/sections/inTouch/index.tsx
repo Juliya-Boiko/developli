@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 import { address } from '@/constants/socials'
-import { ContactForm } from "@/components/forms/contactForm"
+import { ContactForm } from "@/components/forms/contact"
 import { Map } from './Map'
 
 export const InTouch = () => (

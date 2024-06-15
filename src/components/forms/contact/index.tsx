@@ -12,12 +12,10 @@ import { BtnPrimary } from '@/components/buttons/primary'
 import { btnSizes } from '@/utils/setBtnStyles'
 
 export const ContactForm = () => {
-  const { register, control, getFieldState, handleSubmit, formState: { errors } } = useForm<ContactFormData>({
+  const { register, control, handleSubmit, formState: { errors } } = useForm<ContactFormData>({
     mode: "onTouched",
     resolver: yupResolver(contactSchema)
   })
-
-  const topics = searchTags.map((el) => ({ value: el.value, label: el.name }))
 
   const onSubmit = (data: ContactFormData) => console.log(data);
   
@@ -58,7 +56,7 @@ export const ContactForm = () => {
               value={field.value}
               options={companySize}
               onChange={(v) => field.onChange(v)} />
-        )} />
+          )} />
       </div>
       <div className={styles.topics}>
         <Controller
@@ -70,7 +68,7 @@ export const ContactForm = () => {
               isMulti={true}
               label='How our team can help you?'
               value={field.value}
-              options={topics}
+              options={searchTags}
               onChange={(v) => field.onChange(v)} />
         )} />
       </div>

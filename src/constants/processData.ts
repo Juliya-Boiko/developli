@@ -112,55 +112,60 @@ export const reviews = [
 export const searchTags = [
   {
     color: '#53C58F',
-    name: 'Software Engeneering',
+    label: 'Software Engeneering',
     value: 'software'
   },
   {
     color: '#1F8FFF',
-    name: 'Product',
+    label: 'Product',
     value: 'product'
 
   },
   {
     color: '#F59A74',
-    name: 'Marketing',
+    label: 'Marketing',
     value: 'marketing'
 
   },
   {
     color: '#8E66ED',
-    name: 'HR, Recruitment',
+    label: 'HR, Recruitment',
     value: 'recruitment'
   },
 
   {
     color: '#53C58F',
-    name: 'Design',
+    label: 'Design',
     value: 'design'
 
   },
   {
     color: '#1F8FFF',
-    name: 'Finance, Legal & Compliance',
+    label: 'Finance, Legal & Compliance',
     value: 'finance'
 
   },
   {
     color: '#F59A74',
-    name: 'Operations & Strategy',
+    label: 'Operations & Strategy',
     value: 'operations'
   },
   {
     color: '#53C58F',
-    name: 'Data',
+    label: 'Data',
     value: 'data'
   },
   {
     color: '#8E66ED',
-    name: 'Sales & Account Management',
+    label: 'Sales & Account Management',
     value: 'sales'
   },
 ]
+
+export const categoryTags = {
+  title: 'Category',
+  options: searchTags.map((el) => ({ label: el.label, value: el.value }))
+}
 
 export const policyTerms = [
   {
@@ -399,3 +404,113 @@ export const companySize = [
     label: 'Big (100-...)'
   }
 ]
+
+export const experienceFilters = {
+  title: 'Experience Level',
+  options: [
+    {
+      label: '0-2 years',
+      value: '0-2'
+    },
+    {
+      label: '3-5 years',
+      value: '3-5'
+    },
+    {
+      label: '6-9 years',
+      value: '6-9'
+    },
+    {
+      label: '10+ years',
+      value: '10-'
+    },
+  ]
+}
+
+export const typeFilters = {
+  title: 'Type of employment',
+  options: [
+    {
+      label: 'Fulltime',
+      value: 'fulltime'
+    },
+    {
+      label: 'Part-Time',
+      value: 'part-Time'
+    },
+    {
+      label: 'Remote',
+      value: 'remote'
+    },
+    {
+      label: 'Internship/Trainee',
+      value: 'internship/trainee'
+    },
+    {
+      label: 'Hourly',
+      value: 'Hourly'
+    },
+  ]
+}
+
+export const salaryRange = {
+  title: 'Salary Range',
+  options: [
+    {
+      label: '0-500',
+      value: '0-500'
+    },
+    {
+      label: '500-1000',
+      value: '500-1000'
+    },
+    {
+      label: '1000-3000',
+      value: '1000-3000'
+    },
+    {
+      label: '3000+',
+      value: '3000-'
+    },
+  ]
+}
+
+export const jobStatus = {
+  title: 'Employment Status',
+  options: [
+    {
+      label: 'Available',
+      value: 'available'
+    },
+    {
+      label: 'All',
+      value: 'all'
+    },
+  ]
+}
+
+export const locations = {
+  title: 'Location',
+  options: [
+    {
+      label: 'Saudi Arabia',
+      value: 'Saudi Arabia'
+    },
+    {
+      label: 'United States',
+      value: 'United States'
+    },
+    {
+      label: 'Germany',
+      value: 'Germany'
+    },
+    {
+      label: 'Australia',
+      value: 'Australia'
+    },
+    {
+      label: 'Ukraine',
+      value: 'Ukraine'
+    },
+  ]
+}

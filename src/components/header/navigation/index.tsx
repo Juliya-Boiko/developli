@@ -6,8 +6,8 @@ import { title } from "process";
 export const NavList = () => {
   const navLinks = [
     {
-      title: 'Employers',
-      path: routesNames.Employers
+      title: 'Jobs',
+      path: routesNames.Jobs
     },
     {
       title: 'Candidates',

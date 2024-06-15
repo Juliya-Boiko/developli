@@ -27,15 +27,15 @@ export const Badges = () => {
       <ul className={styles.list}>
         {searchTags.map((el) => (
           <li
-            key={el.name}
+            key={el.label}
             style={{
-              color: badges.includes(el.name) ? '#FFF' : el.color,
+              color: badges.includes(el.label) ? '#FFF' : el.color,
               border: `1px solid ${el.color}`,
-              backgroundColor: badges.includes(el.name) ? el.color : 'transparent'
+              backgroundColor: badges.includes(el.label) ? el.color : 'transparent'
             }}
             className={styles.badge}
           >
-            <button type="button" onClick={() => toggleBadge(el.name)}>{el.name}</button>
+            <button type="button" onClick={() => toggleBadge(el.label)}>{el.label}</button>
           </li>
         ))}
       </ul>

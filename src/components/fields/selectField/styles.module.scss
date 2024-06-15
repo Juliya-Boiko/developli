@@ -1,6 +1,4 @@
 .select {
-  @include flexContainer(column) {
-    align-items: center;
-  }
+  @include flexContainer(column);
   gap: 12px;
 }
