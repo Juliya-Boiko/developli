@@ -51,12 +51,10 @@
 
 .sizeBig {
   padding: $size-16 $size-36;
-  font-size: 16px;
+  @include fontType(16px, 1)
 }
-
-.sizeMedium {}
 
 .sizeSmall {
   padding: $size-12 $size-18;
-  font-size: 12px;
+  @include fontType(12px, 1)
 }

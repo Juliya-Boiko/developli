@@ -1,13 +1,13 @@
 .primaryBtn {
+  width: 100%;
+  border-radius: $size-12;
   @include flexContainer(row) {
     align-items: center;
     justify-content: center;
   }
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
-  border-radius: $size-12;
-  width: 100%;
+  @include fontType(14px, 1.3) {
+    font-weight: 700;
+  }
 }
 
 .primaryBtnAccent {

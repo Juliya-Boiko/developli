@@ -5,10 +5,10 @@
   outline: none;
   padding: $size-18 $size-16;
   border-radius: $size-16;
-  font-size: 14px;
+  @include fontType(14px, 1.6);
   &::placeholder {
-    color: $grey-1;
-    font-size: 14px;
-    line-height: 1.6;
+    @include fontType(14px, 1.6) {
+      color: $grey-1;
+    }
   }
 }

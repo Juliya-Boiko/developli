@@ -26,3 +26,9 @@
   flex-direction: $direction;
   @content;
 }
+
+@mixin fontType ($s, $lh) {
+  font-size: $s;
+  line-height: $lh;
+  @content;
+}

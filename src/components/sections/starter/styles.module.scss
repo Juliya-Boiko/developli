@@ -35,10 +35,10 @@
 }
 
 .title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
   margin: 0 0 $size-32 0;
+  @include fontType(24px, 1.2) {
+    font-weight: 700;
+  }
   @include onTablet {
     font-size: 48px;
     max-width: 300px;
@@ -49,10 +49,10 @@
 }
 
 .subTitle {
-  font-size: 14px;
-  line-height: 1.6;
   margin: 0 0 $size-32 0;
-  color: $grey-1;
+  @include fontType(14px, 1.6) {
+    color: $grey-1;
+  }
 }
 
 .image {

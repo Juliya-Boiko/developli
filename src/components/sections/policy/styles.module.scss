@@ -9,22 +9,22 @@
 }
 
 .title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
   margin: 0 0 $size-32 0;
-  text-align: center;
+  @include fontType(24px, 1.2) {
+    font-weight: 700;
+    text-align: center;
+  }
   @include onDesktop {
     font-size: 44px;
   }
 }
 
 .subTitle {
-  font-size: 14px;
-  line-height: 1.6;
   margin: 0 0 $size-32 0;
-  color: $grey-1;
-  text-align: center;
+  @include fontType(14px, 1.6) {
+    color: $grey-1;
+    text-align: center;
+  }
   @include onDesktop {
     max-width: 760px;
     font-size: 18px;
@@ -47,9 +47,9 @@
 
 .wrapper {
   padding: $size-24 0 0 0;
-  font-size: 14px;
-  line-height: 1.6;
-  color: $grey-1;
+  @include fontType(14px, 1.6) {
+    color: $grey-1;
+  }
   @include onDesktop {
     padding: 0;
     font-size: 18px;
@@ -57,12 +57,12 @@
 }
 
 .termName {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
   margin: 0 0 $size-12 0;
-  text-align: center;
-  color: $se-black-1;
+  @include fontType(24px, 1.2) {
+    font-weight: 700;
+    text-align: center;
+    color: $se-black-1;
+  }
   @include onDesktop {
     font-size: 44px;
     text-align: start;
@@ -90,9 +90,9 @@
   display: none;
   @include onDesktop {
     min-width: 220px;
-    @include flexContainer(column);
     gap: $size-20;
-    font-size: 18px;
+    @include flexContainer(column);
+    @include fontType(18px, 1);
   }
 }
 

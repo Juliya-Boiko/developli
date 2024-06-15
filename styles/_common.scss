@@ -14,9 +14,9 @@
 
 .sectionSubtitle {
   display: none;
-  color: $grey-1;
-  font-size: 18px;
-  line-height: 1.6;
+  @include fontType(18px, 1.6) {
+    color: $grey-1;
+  }
   @include onTablet {
     display: inline-block;
     margin: $size-48 0 0 0;

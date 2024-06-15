@@ -30,10 +30,9 @@
 }
 
 .title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.3;
-  text-align: center;
+  @include fontType(24px, 1.3) {
+    text-align: center;
+  }
   @include onTablet {
     font-size: 44px;
   }
@@ -44,11 +43,10 @@
 }
 
 .block {
-  font-size: 14px;
-  line-height: 1.6;
-  color: $grey-1;
-  text-align: center;
-
+  @include fontType(14px, 1.6) {
+    color: $grey-1;
+    text-align: center;
+  }
   @include onDesktop {
     text-align: start;
     width: 400px;
@@ -92,7 +90,7 @@
   border-radius: $size-20;
   padding: $size-20;
   min-width: 280px;
-  font-size: 14px;
+  @include fontType(14px, 1);
   @include flexContainer(column);
   @include onDesktop {
     min-width: 410px;

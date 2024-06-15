@@ -3,9 +3,10 @@
   @include onTablet {
     display: block;
     padding: $size-40 0;
-    color: $grey-1;
-    font-size: 18px;
-    text-align: center;
-    text-transform: capitalize;
+    @include fontType(18px, 1) {
+      color: $grey-1;
+      text-align: center;
+      text-transform: capitalize;
+    }
   }
 }

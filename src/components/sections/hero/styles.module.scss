@@ -26,10 +26,10 @@
 }
 
 .text {
-  font-size: 14px;
-  line-height: 1.6;
   margin: $size-36 0;
-  text-align: center;
+  @include fontType(14px, 1.6) {
+    text-align: center;
+  }
   @include onTablet {
     margin: $size-48 0;
     font-size: 18px;

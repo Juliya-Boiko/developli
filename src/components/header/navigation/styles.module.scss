@@ -1,11 +1,12 @@
 .navList {
   display: none;
   @include onDesktop {
-    font-weight: 600;
-    font-size: 16px;
-    @include flexContainer(row);
     gap: $size-24;
-    color: $se-black-3;
+    @include fontType(16px, 1.5) {
+      font-weight: 600;
+      color: $se-black-3;
+    }
+    @include flexContainer(row);
   }
 }
 

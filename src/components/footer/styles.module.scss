@@ -38,16 +38,15 @@
 }
 
 .title {
-  color: $se-black-1;
   margin: 0 0 $size-18 0;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
+  @include fontType(20px, 1.5) {
+    font-weight: 700;
+    color: $se-black-1;
+  }
 }
 
 .navLink {
-  font-size: 20px;
-  line-height: 1.5;
+  @include fontType(20px, 1.5);
 }
 
 .address {
@@ -66,19 +65,17 @@
 }
 
 .text {
-  font-size: 20px;
-  line-height: 1.5;
+  @include fontType(20px, 1.5);
 }
 
 .info {
+  padding: $size-24 0 0 0;
+  border-top: 1px solid $black-2;
   @include flexContainer(column) {
     align-items: center;
     justify-content: space-between;
   }
-  border-top: 1px solid $black-2;
-  padding: $size-24 0 0 0;
-  font-size: 16px;
-  line-height: 1.5;
+  @include fontType(16px, 1.5);
   @include onTablet {
     flex-direction: row;
   }
