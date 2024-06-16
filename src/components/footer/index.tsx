@@ -7,6 +7,7 @@ import { routesNames, navList } from '@/constants/routesNames'
 
 export const Footer = () => (
   <footer className={styles.footer}>
+    
     <div className={`container ${styles.content}`}>
       <div className={styles.links}>
         <div className={styles.address}>
@@ -19,9 +20,9 @@ export const Footer = () => (
             <li key={el.title}>
               <p className={styles.title}>{el.title}</p>
               <ul className={styles.list}>
-                {el.routes.map((route) => (
-                  <li key={route.name} className={styles.navLink}>
-                    <Link href={route.path}>{route.name}</Link>
+                {el.list.map((route) => (
+                  <li key={route.title} className={styles.navLink}>
+                    <Link href={route.route}>{route.title}</Link>
                   </li>
                 ))}
               </ul>

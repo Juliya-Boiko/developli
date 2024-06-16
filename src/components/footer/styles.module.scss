@@ -1,4 +1,5 @@
 .footer {
+  width: 100%;
   color: $black-2;
   background-color: $beige;
   border-radius: $size-32 $size-32 0 0;
@@ -7,7 +8,7 @@
 .content {
   padding: $size-24 $size-12;
   @include onTablet {
-    padding: $size-24 $size-40;
+    padding: $size-24 $size-48;
   }
   @include onDesktop {
     padding: $size-40 $size-80;
@@ -46,7 +47,11 @@
 }
 
 .navLink {
+  @extend %transition;
   @include fontType(20px, 1.5);
+  &:hover {
+    color: $green-2;
+  }
 }
 
 .address {
@@ -93,7 +98,7 @@
 }
 
 .socials {
-  @include flexContainer(column) {
+  @include flexContainer(row) {
     align-items: center;
   }
   gap: $size-8;
