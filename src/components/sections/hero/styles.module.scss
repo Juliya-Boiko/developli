@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: space-between;
   }
-  padding: $size-24 $size-12;
+  padding: $size-48 $size-12 $size-24 $size-12;
   background-image: url('../../../../public/bgi/hero.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
   @include onTablet {
-    padding: $size-24 $size-40;
+    padding: $size-24 $size-48;
     background-position: center right;
   }
   @include onDesktop {
@@ -25,13 +25,21 @@
   }
 }
 
+.title {
+  text-align: center;
+  margin: 0 0 $size-36 0;
+  @include onDesktop {
+    text-align: start;
+  }
+}
+
 .text {
-  margin: $size-36 0;
+  margin: 0 0 $size-36 0;
   @include fontType(14px, 1.6) {
     text-align: center;
+    color: $grey-1; 
   }
-  @include onTablet {
-    margin: $size-48 0;
+  @include onDesktop {
     font-size: 18px;
     text-align: start;
   }
@@ -42,6 +50,10 @@
   gap: $size-18;
   @include onTablet {
     flex-direction: row;
+    justify-content: center;
+  }
+  @include onDesktop {
+    justify-content: flex-start;
   }
 }
 
@@ -50,7 +62,7 @@
   height: 450px;
   width: 100%;
   @include onTablet {
-    height: 550px;
+    height: 400px;
   }
   @include onDesktop {
     width: 50%;
@@ -60,59 +72,54 @@
 
 .image1 {
   position: absolute;
-  z-index: 2;
-  top: 150px;
-  left: 0;
-  width: 120px;
-  height: 160px;
+  bottom: 80px;
+  background-image: url('../../../../public/images/163560.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include squareSize(180px);
   @include onTablet {
-    top: 100px;
-    left: 0;
-    width: 238px;
-    height: 317px;
+    @include squareSize(240px);
+    left: 100px;
   }
   @include onDesktop {
-    top: 300px;
-    left: 0;
+    @include squareSize(300px);
+    left: 80px;
+    bottom: 200px;
   }
 }
 
 .image2 {
   position: absolute;
-  z-index: 2;
-  top: 50px;
-  right: 50px;
-  width: 80px;
-  height: 110px;
+  top: 40px;
+  right: 30px;
+  @include squareSize(120px);
+  background-image: url('../../../../public/images/163559.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   @include onTablet {
-    top: 50px;
-    right: 50px;
-    width: 172px;
-    height: 230px;
+    @include squareSize(140px);
+    right: 160px;
   }
   @include onDesktop {
-    right: 200px;
-    top: 100px;
+    @include squareSize(240px);
+    right: 80px;
   }
 }
 
 .image3 {
   position: absolute;
-  z-index: 2;
-  bottom: 50px;
-  right: 100px;
-  width: 80px;
-  height: 110px;
+  bottom: 60px;
+  right: 0;
+  @include squareSize(120px);
+  background-image: url('../../../../public/images/1405.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   @include onTablet {
-    bottom: 0;
     right: 200px;
-    width: 172px;
-    height: 230px;
   }
   @include onDesktop {
+    @include squareSize(240px);
     bottom: 100px;
-    right: 100px;
-    width: 172px;
-    height: 230px;
+    right: 20px;
   }
 }

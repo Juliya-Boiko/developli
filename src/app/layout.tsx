@@ -1,6 +1,7 @@
 import "./globals.css"
 import '../../styles/globalStyles.scss'
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { readexFont } from "@/utils/fonts"
@@ -17,10 +18,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <ClientProvider>
         <body className={readexFont.className}>
           <Header />
-          <main></main>
-          {/* 
-            {children}
-           */}
+          <main>
+            <Suspense fallback={<p>Loading...</p>}>
+              {children}
+            </Suspense>
+          </main>
           <Footer />
         </body>
       </ClientProvider>

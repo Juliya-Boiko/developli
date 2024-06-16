@@ -1,22 +1,20 @@
-import svgInsta from '../../public/icons/insta.svg'
-import svgTwitter from '../../public/icons/twitter.svg'
-import svgFacebook from '../../public/icons/facebook.svg'
+import { assetsSrc } from '@/utils/assets'
 
 export const socialsList = [
   {
     title: 'Instagram',
     link: '',
-    icon: svgInsta
+    icon: assetsSrc.insta
   },
   {
     title: 'Twitter',
     link: '',
-    icon: svgTwitter
+    icon: assetsSrc.twitter
   },
   {
     title: 'Facebook',
     link: '',
-    icon: svgFacebook
+    icon: assetsSrc.facebook
   },
 ]
 

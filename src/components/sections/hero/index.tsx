@@ -8,44 +8,45 @@ import { linkSizes } from '@/utils/setLinkStyles'
 import { routesNames } from '@/constants/routesNames'
 
 export const Hero = () => (
-  <section className="container">
-    <div className={styles.content}>
-      <div className={styles.wrapper}>
-        <h1 className="pageTitle">Let’s <span className="accent-green">boost up</span> your hiring process</h1>
-        <p className={styles.text}>We are nost efficient and reliable souce of hiring <br/> perocess and two time faster than any other companies</p>
-        <div className={styles.actions}>
-          <RouterLink
-            title="Start hiring"
-            primary
-            icon
-            height={linkSizes.Big}
-            path={routesNames.Index}
-          />
-          <RouterLink
-            title="Post a job"
-            icon
-            height={linkSizes.Big}
-            path={routesNames.Index}
-          />
-        </div>
-      </div>
-      <div className={styles.images}>
-        <Image 
-          src={image1}
-          alt='Image1'
-          className={styles.image3}
+  <section className={`container ${styles.content}`}>
+    <div className={styles.wrapper}>
+      <h1 className={`pageTitle ${styles.title}`}>Let’s <span className="accent-green">boost up</span> your hiring process</h1>
+      <p className={styles.text}>We are nost efficient and reliable souce of hiring <br/> perocess and two time faster than any other companies</p>
+      <div className={styles.actions}>
+        <RouterLink
+          title="Start hiring"
+          primary
+          icon
+          height={linkSizes.Big}
+          path={routesNames.Index}
         />
-        <Image 
-          src={image2}
-          alt='Image1'
-          className={styles.image2}
-        />
-        <Image 
-          src={image3}
-          alt='Image1'
-          className={styles.image1}
+        <RouterLink
+          title="Post a job"
+          icon
+          height={linkSizes.Big}
+          path={routesNames.Index}
         />
       </div>
+    </div>
+    <div className={styles.images}>
+      <div className={styles.image1}></div>
+      <div className={styles.image2}></div>
+      <div className={styles.image3}></div>
+      {/* <Image 
+        src={image1}
+        alt='Image1'
+        className={styles.image3}
+      />
+      <Image 
+        src={image2}
+        alt='Image1'
+        className={styles.image2}
+      />
+      <Image 
+        src={image3}
+        alt='Image1'
+        className={styles.image1}
+      /> */}
     </div>
   </section>
 )
