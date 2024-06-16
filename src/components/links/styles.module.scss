@@ -33,7 +33,7 @@
 
 .authLink {
   @extend %routerLink;
-  display: none;
+  padding: 0;
   
   @include onDesktop {
     @include flexContainer(row) {

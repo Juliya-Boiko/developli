@@ -17,10 +17,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <ClientProvider>
         <body className={readexFont.className}>
           <Header />
-          <main>
+          <main></main>
+          {/* 
             {children}
-          </main>
-          <Footer />
+           */}
+          {/* <Footer /> */}
         </body>
       </ClientProvider>
     </html>

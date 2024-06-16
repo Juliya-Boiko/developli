@@ -10,7 +10,7 @@ import { routesNames } from "@/constants/routesNames"
 export const HomePage = () => (
   <>
     <Hero />
-    <Process items={processGuid}>
+    {/* <Process items={processGuid}>
       <h2 className="sectionTitle">With Developli, hiring is <span className="accent-green">easy-peasy</span>, lemon squeezy</h2>
       <p className="sectionSubtitle">Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
     </Process>
@@ -22,6 +22,6 @@ export const HomePage = () => (
       bgColor="#B6DAFF"
       image={imgStarter}
       navigateTo={routesNames.Index}
-    />
+    /> */}
   </>
 )

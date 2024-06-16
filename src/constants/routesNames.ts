@@ -1,89 +1,78 @@
 export const routesNames = {
   Index: '/',
-  Candidated: '/candidates',
-  Employers: '/employers',
   Search: '/search',
-  Blog: '/blog',
-  About: '/about',
+  Employers: '/employers',
+  Candidates: '/candidates',
   Careers: '/careers',
+  About: '/about',
   Faq: '/faq',
   Contacts: '/contacts',
+  Blog: '/blog',
+  Articles: '/articles',
   PrivacyPolicy: '/privacy-policy',
   Auth: '/auth',
-  Jobs: '/jobs'
 }
 
 export const navList = [
   {
     title: 'Employers',
-    routes: [
+    list: [
       {
-        name: 'Start Hiring',
-        path: ''
+        title: 'For Employers',
+        route: routesNames.Employers
       },
       {
-        name: 'Volunteer',
-        path: ''
+        title: 'Find a candidate',
+        route: routesNames.Search
       },
-      {
-        name: 'Diversity and Inclusion',
-        path: ''
-      }
     ]
   },
   {
     title: 'Candidates',
-    routes: [
+    list: [
       {
-        name: 'Get Hired',
-        path: ''
+        title: 'For Candidates',
+        route: routesNames.Candidates
       },
       {
-        name: 'Internships',
-        path: ''
+        title: 'Careers',
+        route: routesNames.Careers
       },
       {
-        name: 'Temporary Employment',
-        path: ''
+        title: 'Find a job',
+        route: routesNames.Search
       },
-      {
-        name: 'Graduates',
-        path: ''
-      },
-      {
-        name: 'Volunteer',
-        path: ''
-      },
+
     ]
   },
   {
     title: 'Company',
-    routes: [
+    list: [
       {
-        name: 'For Students',
-        path: ''
+        title: 'About',
+        route: routesNames.About
       },
       {
-        name: 'Careers',
-        path: routesNames.Careers
+        title: 'FAQ',
+        route: routesNames.Faq
       },
       {
-        name: 'Brand Ambassadors',
-        path: ''
+        title: 'Contact us',
+        route: routesNames.Contacts
+      }
+    ]
+  },
+  {
+    title: 'Blog',
+    list: [
+      {
+        title: 'Our Blog',
+        route: routesNames.Blog
       },
       {
-        name: 'About',
-        path: routesNames.About
-      },
-      {
-        name: 'Resources',
-        path: ''
-      },
-      {
-        name: 'Blog',
-        path: routesNames.Blog
+        title: 'Recent Articles',
+        route: ''
       },
     ]
   },
-
 ]

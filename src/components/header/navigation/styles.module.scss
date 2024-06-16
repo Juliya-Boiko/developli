@@ -11,11 +11,42 @@
 }
 
 .navItem {
-  @extend %transition;
-  &:hover {
-    color: $green-2;
-  }
   &:active {
     color: $green-1;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.title {
+  cursor: pointer;
+  @extend %transition;
+  &:hover, &:active {
+    color: $green-2;
+  }
+}
+
+.list {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  min-width: 140px;
+  @extend %transition;
+  padding: $size-12;
+  border-radius: $size-12;
+  background-color: $white;
+  z-index: 2;
+  @include fontType(14px, 1) {
+    font-weight: 400;
+    color: $grey-1;
+  }
+}
+
+.link {
+  padding: $size-8 0;
+  &:hover, &:active {
+    color: $green-2;
   }
 }

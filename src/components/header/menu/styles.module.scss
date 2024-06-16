@@ -7,3 +7,87 @@
 .btnOpen {
   @include flexContainer(row);
 }
+
+.overlay {
+  @include onDesktop {
+    display: none;
+  }
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background-color: $beige-01;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 45%, rgba(193, 227, 211, 0.4507658643326039) 100%);
+}
+
+.content {
+  height: 100%;
+  padding: $size-16 $size-12 $size-32 $size-12;
+  @include onTablet {
+    padding: $size-24 $size-48;
+  }
+}
+
+.separated {
+  height: 100%;
+  @include flexContainer(column) {
+    justify-content: space-between;
+  }
+}
+
+.head {
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.list {
+  padding: $size-24 0 $size-12 0;
+  color: $grey-1;
+  border-bottom: 1px solid $grey-3;
+}
+
+.btnExpand {
+  width: 100%;
+  padding: $size-16 $size-12;
+  border-radius: $size-12;
+  cursor: pointer;
+  @extend %transition;
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include fontType(16px, 1.3) {
+    font-weight: 500;
+  }
+}
+
+.links {
+  padding: 0 $size-24;
+}
+
+.link {
+  width: 100%;
+  padding: $size-16 0;
+  @extend %transition;
+  @include fontType(14px, 1);
+  &:hover {
+    color: $green-2;
+  }
+}
+
+.auth {
+  padding: $size-24 0 0 0;
+  @include flexContainer(row) {
+    justify-content: flex-start;
+  }
+}
+
+.actions {
+  @include flexContainer(column) {
+    gap: $size-16;
+  }
+}

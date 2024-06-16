@@ -1,3 +1,5 @@
-export default function Page() {
-  return <div>About Page</div>;
-}
+import { AboutPage } from "@/components/pages/about"
+
+const Page = () => (<AboutPage />)
+
+export default Page
