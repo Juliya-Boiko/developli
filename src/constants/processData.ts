@@ -410,15 +410,15 @@ export const experienceFilters = {
   options: [
     {
       label: '0-2 years',
-      value: '0-2'
+      value: '0-2 years'
     },
     {
       label: '3-5 years',
-      value: '3-5'
+      value: '3-5 years'
     },
     {
       label: '6-9 years',
-      value: '6-9'
+      value: '6-9 years'
     },
     {
       label: '10+ years',
@@ -527,7 +527,22 @@ export const sort = [
 ]
 
 export const workLevels = [
-  'Trainee', 'Junior', 'Middle', 'Senior'
+  {
+    label: 'Trainee',
+    value: 'Trainee'
+  },
+  {
+    label: 'Junior',
+    value: 'Junior'
+  },
+  {
+    label: 'Middle',
+    value: 'Middle'
+  },
+  {
+    label: 'Senior',
+    value: 'Senior'
+  },
 ]
 
 export const companies = [
@@ -550,7 +565,7 @@ export const companies = [
     updatedAt: Date.now().toLocaleString(),
 
     experience: '0-2 years',
-    workLevel: 'Senior Level',
+    workLevel: 'Senior',
     type: 'Fulltime Job',
 
     description: 'Frogwares is currently looking for a Narrative Designer to join the dynamic team of game designers for its upcoming titles. Our expert team creates games which are highly praised by millions of players, as well as industry experts all over the world.',
@@ -582,8 +597,8 @@ export const companies = [
     updatedAt: Date.now().toLocaleString(),
 
     experience: '0-2 years',
-    workLevel: 'Senior Level',
-    type: 'Fulltime Job',
+    workLevel: 'Junior',
+    type: 'Fulltime',
 
     description: 'Frogwares is currently looking for a Narrative Designer to join the dynamic team of game designers for its upcoming titles. Our expert team creates games which are highly praised by millions of players, as well as industry experts all over the world.',
 
