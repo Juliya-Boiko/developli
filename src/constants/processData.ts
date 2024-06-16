@@ -525,3 +525,74 @@ export const sort = [
     value: 'Latest'
   },
 ]
+
+export const workLevels = [
+  'Trainee', 'Junior', 'Middle', 'Senior'
+]
+
+export const companies = [
+  {
+    id: '1',
+    companyId: '',
+
+    position: 'Narrative designer',
+    avatar: '',
+
+    link: 'Racuten',
+    name: 'Invision',
+
+    city: 'Chicago',
+    counry: 'USA',
+
+    salary: 25000,
+
+    createdAt: Date.now().toLocaleString(),
+    updatedAt: Date.now().toLocaleString(),
+
+    experience: '0-2 years',
+    workLevel: 'Senior Level',
+    type: 'Fulltime Job',
+
+    description: 'Frogwares is currently looking for a Narrative Designer to join the dynamic team of game designers for its upcoming titles. Our expert team creates games which are highly praised by millions of players, as well as industry experts all over the world.',
+
+    requirements: [
+      'At least 3 years of experience on a similar position;',
+      'English – Upper intermediate (B2) or higher;',
+      'Strong dramatic writing skills in English;',
+      'Deep understanding of story structure, non-linear narrative methods;',
+      'Passion for video games of various genres, especially for the open-world genre;'
+    ]
+  },
+  {
+    id: '2',
+    companyId: '',
+
+    position: 'Narrative designer',
+    avatar: '',
+
+    link: 'Racuten',
+    name: 'Invision',
+
+    city: 'Chicago',
+    counry: 'USA',
+
+    salary: 25000,
+
+    createdAt: Date.now().toLocaleString(),
+    updatedAt: Date.now().toLocaleString(),
+
+    experience: '0-2 years',
+    workLevel: 'Senior Level',
+    type: 'Fulltime Job',
+
+    description: 'Frogwares is currently looking for a Narrative Designer to join the dynamic team of game designers for its upcoming titles. Our expert team creates games which are highly praised by millions of players, as well as industry experts all over the world.',
+
+    requirements: [
+      'At least 3 years of experience on a similar position;',
+      'English – Upper intermediate (B2) or higher;',
+      'Strong dramatic writing skills in English;',
+      'Deep understanding of story structure, non-linear narrative methods;',
+      'Passion for video games of various genres, especially for the open-world genre;'
+    ]
+  }
+]

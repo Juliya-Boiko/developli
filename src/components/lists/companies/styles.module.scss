@@ -1,0 +1,5 @@
+.list {
+  @include flexContainer(column) {
+    gap: $size-36;
+  }
+}

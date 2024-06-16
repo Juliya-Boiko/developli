@@ -52,6 +52,7 @@ export const ContactForm = () => {
             <SelectField
               {...field}
               isMulti={false}
+              isGrey
               label='Company Size'
               value={field.value}
               options={companySize}
@@ -66,6 +67,7 @@ export const ContactForm = () => {
             <SelectField
               {...field}
               isMulti={true}
+              isGrey
               label='How our team can help you?'
               value={field.value}
               options={searchTags}

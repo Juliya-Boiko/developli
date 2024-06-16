@@ -13,3 +13,8 @@ export interface ButtonPrimaryProps {
   height: string
   onClick?: () => void
 }
+
+export interface ButtonCardProps {
+  icon: string
+  onClick?: () => void
+}

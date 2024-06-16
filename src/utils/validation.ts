@@ -26,4 +26,3 @@ export const filtersSchema = yup.object({
 }).required();
 
 export type FiltersFormData = yup.InferType<typeof filtersSchema>
-

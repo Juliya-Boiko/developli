@@ -4,13 +4,14 @@ import styles from './styles.module.scss'
 import commonStyles from '../commonStyles.module.scss'
 import { SelectFieldProps } from './type'
 import { forwardRef } from 'react'
+import { contactStyles, filtersStyles } from '@/utils/setSelectStyles'
 
 const Select = dynamic(() => import('react-select'), { ssr: false })
 
 const SelectField = forwardRef<HTMLDivElement, SelectFieldProps>(
-  ({ options, value, label, onChange, isMulti, ...rest }, ref) => {
+  ({ options, value, label, onChange, isMulti, isGrey, ...rest }, ref) => {
 
-    const selected = options.find((el) => el.value === value)
+    const selected = options.find((el) => el.value === value) || options[0]
 
     const handleChange = (data: any) => {
       if (isMulti) {
@@ -20,6 +21,8 @@ const SelectField = forwardRef<HTMLDivElement, SelectFieldProps>(
         onChange(data.value)
       }
     }
+
+    const customStyles = isGrey ? contactStyles : filtersStyles
 
     return (
       <div ref={ref} className={styles.select}>
@@ -33,12 +36,7 @@ const SelectField = forwardRef<HTMLDivElement, SelectFieldProps>(
           styles={{
             control: base => ({
               ...base,
-              padding: '8px',
-              fontSize: '14px',
-              border: 0,
-              borderRadius: '16px',
-              boxShadow: 'none',
-              backgroundColor: '#F6F8F9'
+              ...customStyles
             }),
             option: (styles, { isSelected }) => ({
               ...styles,

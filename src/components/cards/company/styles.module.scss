@@ -1,0 +1,69 @@
+.card {
+  border-radius: $size-16;
+  padding: $size-24;
+  background-color: $white;
+}
+
+.head {
+  margin: 0 0 $size-24 0;
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.actions {
+  @include flexContainer(row) {
+    align-items: center;
+    gap: $size-16;
+  }
+}
+
+.position {
+  margin: 0 0 $size-16 0;
+  @include fontType(18px, 1.3) {
+    font-weight: 700;
+  }
+}
+
+.info {
+  margin: 0 0 $size-16 0;
+  @include flexContainer(row) {
+    gap: $size-20;
+  }
+  @include fontType(14px, 1.3) {
+    font-weight: 500;
+    color: $grey-1;
+  }
+}
+
+.link {
+  color: $blue-1;
+  cursor: pointer;
+}
+
+.location {
+  @include flexContainer(row) {
+    align-items: center;
+    gap: $size-8;
+  }
+}
+
+.salary {
+  @include flexContainer(row) {
+    align-items: center;
+    gap: $size-8;
+  }
+}
+
+.amount {
+  color: $se-black-1;
+}
+
+.description {
+  margin: 0 0 $size-24 0;
+  @include fontType(16px, 1.6) {
+    color: $grey-1;
+  }
+}
+

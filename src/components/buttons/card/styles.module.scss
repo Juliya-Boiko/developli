@@ -1,0 +1,11 @@
+.btnCard {
+  @include flexContainer(row) {
+    align-items: center;
+    justify-content: center;
+  }
+  @include squareSize(42px);
+  background-color: $white;
+  border: 1.5px solid $light-grey-1;
+  border-radius: 50%;
+  overflow: hidden;
+}
