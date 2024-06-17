@@ -16,15 +16,18 @@ import svgChat from '../../public/icons/chat.svg'
 export const processGuid = [
   {
     title: 'Post your job',
-    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies'
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    back: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
   },
   {
     title: 'Manage applicants',
-    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies'
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    back: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
   },
   {
     title: 'Easily find quality matches',
-    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies'
+    text: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
+    back: 'We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies',
   },
 ]
 

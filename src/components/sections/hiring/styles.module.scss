@@ -1,0 +1,139 @@
+.section {
+  padding: $size-24 $size-12;
+
+  @include onTablet {
+    padding: $size-48;
+  }
+
+  @include onDesktop {
+    padding: $size-80;
+  }
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 $size-24 0;
+  @include onTablet {
+    margin: 0 auto $size-36 auto;
+  }
+}
+
+.subTitle {
+  text-align: center;
+  margin: 0 0 $size-24 0;
+  color: $grey-1;
+  @include onTablet {
+    max-width: 450px;
+    margin: 0 auto $size-36 auto;
+    font-size: 18px;
+  }
+}
+
+// .titleWrapper {
+//   @include onTablet {
+//     margin: 0 auto;
+//     width: 620px;
+//   }
+// }
+
+// .list {
+//   @include flexContainer(column);
+//   gap: $size-16;
+//   margin: $size-32 0 0 0;
+
+//   @include onDesktop {
+//     margin: $size-48 0 0 0;
+//     flex-direction: row;
+//     gap: $size-20;
+//   }
+// }
+
+// .listItem {
+//   @include fontType(14px, 1.5);
+//   position: relative;
+//   padding: $size-32 $size-32 $size-48 $size-32;
+//   background-color: $white;
+//   border-radius: $size-32;
+//   box-shadow: $shadow-s;
+//   @extend %transition;
+
+//   &:hover {
+//     background-color: $se-black-3;
+//     color: $secondary-yellow-green;
+//   }
+
+//   &:hover .order {
+//     background-color: $secondary-yellow-green;
+//     border-color: $secondary-yellow-green;
+//   }
+
+//   @include onDesktop {
+//     height: 490px;
+
+//     @include flexContainer(column) {
+//       justify-content: space-between;
+//     }
+
+//     ;
+//     padding: $size-32 $size-32 $size-60 $size-32;
+//   }
+// }
+
+// .listItem:nth-child(2) {
+//   @include onDesktop {
+//     top: 40px;
+//   }
+// }
+
+// .listItem:nth-child(3) {
+//   @include onDesktop {
+//     top: 80px;
+//   }
+// }
+
+// .order {
+//   border: 1px solid $se-black-1;
+//   border-radius: 50%;
+//   margin: 0 0 $size-18 0;
+//   @include squareSize(40px);
+
+//   @include flexContainer(row) {
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   ;
+
+//   @include fontType(18px, 1.5) {
+//     font-weight: 700;
+//     color: $se-black-3;
+//   }
+
+//   @extend %transition;
+
+//   @include onDesktop {
+//     @include squareSize(58px);
+//     font-size: 20px;
+//     margin: 0;
+//   }
+// }
+
+// .title {
+//   @include fontType(18px, 1.5) {
+//     font-weight: 700;
+//     color: $se-black-3;
+//   }
+
+//   @include onDesktop {
+//     font-size: 32px;
+//   }
+// }
+
+// .text {
+//   margin: $size-18 0 0 0;
+
+//   @include onDesktop {
+//     margin: $size-32 0 0 0;
+//     font-size: 16px;
+//   }
+// }

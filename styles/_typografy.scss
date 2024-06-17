@@ -22,7 +22,6 @@
 .sectionTitle {
   @include fontType(24px, 1.3) {
     font-weight: 700;
-    text-align: center;
   }
   @include onTablet {
     font-size: 44px;

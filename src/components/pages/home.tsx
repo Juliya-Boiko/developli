@@ -6,14 +6,17 @@ import { Partners } from "@/components/sections/partners"
 import { Starter } from "@/components/sections/starter"
 import imgStarter from '../../../public/images/starter1.png'
 import { routesNames } from "@/constants/routesNames"
+import { Hiring } from "../sections/hiring"
 
 export const HomePage = () => (
   <>
-    <Hero />
+    {/* <Hero /> */}
+    {/* <Hiring /> */}
     {/* <Process items={processGuid}>
       <h2 className="sectionTitle">With Developli, hiring is <span className="accent-green">easy-peasy</span>, lemon squeezy</h2>
       <p className="sectionSubtitle">Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
-    </Process>
+    </Process> */}
+    {/* 
     <Opportunities />
     <Partners />
     <Starter

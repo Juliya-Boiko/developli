@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import path from 'path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -21,6 +22,15 @@ const nextConfig = {
   assetPrefix: '/developli',
   output: 'export',
   pageExtensions: ['jsx', 'js', 'tsx', 'ts'],
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, 'src'),
+      '@types': path.resolve(__dirname, 'src/types')
+    };
+    return config;
+  }
+
 };
 
 export default nextConfig;
